@@ -1,4 +1,4 @@
-# Very short description of the package
+# laravel-dashboard
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/:package_name)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-dashboard/run-tests?label=tests)](https://github.com/spatie/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)

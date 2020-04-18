@@ -2,7 +2,9 @@
 
 namespace Spatie\Dashboard\Http\Components;
 
-class DashboardTileComponent
+use Illuminate\View\Component;
+
+class DashboardTileComponent extends Component
 {
     public string $gridArea;
 
