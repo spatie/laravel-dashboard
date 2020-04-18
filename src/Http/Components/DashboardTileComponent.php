@@ -41,7 +41,6 @@ class DashboardTileComponent extends Component
         $toEnd = ((int)$this->indexInAlphabet($to[0])) + 1;
 
         return "{$areaFrom} / {$toStart} / {$toEnd}";
-
     }
 
     private function indexInAlphabet(string $character): int
