@@ -18,7 +18,7 @@ class DashboardTileComponent extends Component
         return view('dashboard::tile');
     }
 
-    private function convertToGridArea(string $position): string
+    protected function convertToGridArea(string $position): string
     {
         $parts = explode(':', $position);
 
