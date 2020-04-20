@@ -8,9 +8,13 @@ class DashboardTileComponent extends Component
 {
     public string $gridArea;
 
-    public function __construct(string $position)
+    public bool $show;
+
+    public function __construct(string $position, bool $show = true)
     {
         $this->gridArea = $this->convertToGridArea($position);
+
+        $this->show = $show;
     }
 
     public function render()
