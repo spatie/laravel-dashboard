@@ -17,6 +17,10 @@ class DashboardServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
+            __DIR__ . '/../config/dashboard.php' => config_path('dashboard.php'),
+        ], 'dashboard-config');
+
+        $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard'),
         ], 'dashboard-views');
 

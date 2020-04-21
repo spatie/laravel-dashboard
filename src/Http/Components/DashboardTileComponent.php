@@ -12,14 +12,13 @@ class DashboardTileComponent extends Component
 
     public bool $show;
 
-    public function __construct(string $position, $title = '', bool $show = true)
+    public function __construct(string $position, string $title = '', bool $show = true)
     {
         $this->gridArea = $this->convertToGridArea($position);
 
         $this->title = $title;
 
         $this->show = $show;
-
     }
 
     public function render()
