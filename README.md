@@ -1,8 +1,8 @@
 # Create beautiful dashboards powered by Livewire
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/:package_name)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-dashboard/run-tests?label=tests)](https://github.com/spatie/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard-calendar-tile)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-dashboard/run-tests?label=tests)](https://github.com/spatie/laravel-dashboard-calendar-tile/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard-calendar-tile)
 
 Using this package you can create a beautiful dashboard Like this one.
 
@@ -34,7 +34,7 @@ composer require spatie/laravel-dashboard
 To create the `dashboard_tiles` table, you must create and run the migration.
 
 ```bash
-php artisan vendor:publish --provider="Spatie\Dashbaord\DashboardServiceProvider" --tag="mailcoach-migrations"
+php artisan vendor:publish --provider="Spatie\Dashboard\DashboardServiceProvider" --tag="mailcoach-migrations"
 php artisan migrate
 ```
 
