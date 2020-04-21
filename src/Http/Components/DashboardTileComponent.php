@@ -19,7 +19,6 @@ class DashboardTileComponent extends Component
         $this->title = $title;
 
         $this->show = $show;
-
     }
 
     public function render()
