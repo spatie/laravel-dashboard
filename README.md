@@ -76,6 +76,14 @@ Most tiles accept a position property. You can pass a single position like `a1`.
 
 The dashboard is being rendered using css grid. Behind the scenes, these coordinates will be converted to grid classes. The grid will grow automatically. If a `c` is the "highest" letter used on the dashboard, it will have 3 columns, if a `e` is used on any tile, the dashboard will have 5 columns. The same applies with the rows.
 
+### Customizing the views
+
+If you want to customize the view used to render the dashboard and the tiles, run this command:
+
+```bash
+php artisan vendor:publish --provider="Spatie\Dashboard\DashboardServiceProvider" --tag="dashboard-views"
+```
+
 ## Testing
 
 ``` bash
