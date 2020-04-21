@@ -16,7 +16,11 @@ class DashboardServiceProvider extends ServiceProvider
             ], 'migrations');
         }
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard-views');
+        $this->publishes([
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard'),
+        ], 'dashboard-views');
+
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard');
 
         Blade::component('dashboard::page', 'dashboard-page');
         Blade::component('dashboard::dashboard', 'dashboard');
