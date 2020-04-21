@@ -15,7 +15,7 @@ This package contains the base functionality. It contains:
 - the base css
 - a `dashboard` view component
 - a `tile` view component to position stuff on the dashboard
-- a `Tile` model to persist fetched data that tiles can use to store fetched data.
+- a `Tile` model to persist fetched data that tiles can use to store fetched data
 
 ## Support us
 
