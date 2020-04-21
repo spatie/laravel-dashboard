@@ -24,11 +24,14 @@ return [
     // ...
     'tiles' => [
         'belgian_trains' => [
-            [
-                'departure' => 'Antwerpen-Centraal',
-                'destination' => 'Gent-Dampoort',
-                'label' => 'Gent',
+            'connections' => [
+                [
+                    'departure' => 'Antwerpen-Centraal',
+                    'destination' => 'Gent-Dampoort',
+                    'label' => 'Gent',
+                ],
             ],
+            'refresh_interval_in_seconds' => 60,
         ],
     ],
 ];
