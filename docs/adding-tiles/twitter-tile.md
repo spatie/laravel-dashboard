@@ -3,7 +3,7 @@ title: Twitter tile
 weight: 5
 ---
 
-This tile can used on the [Laravel Dashboard](https://github.com/spatie/laravel-dashboard) to display Twitter mentions.
+This tile displays Twitter mentions.
 
 ![screenshot](TODO: add link)
 

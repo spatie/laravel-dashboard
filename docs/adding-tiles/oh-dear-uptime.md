@@ -3,7 +3,7 @@ title: Oh Dear Uptime tile
 weight: 4
 ---
 
-This tile can used on the [Laravel Dashboard](https://github.com/spatie/laravel-dashboard) to display the sites that [Oh Dear](https://ohdear.app) detects as down.
+This tile displays sites that [Oh Dear](https://ohdear.app) detects as down.
 
 ![screenshot](TODO: add link)
 

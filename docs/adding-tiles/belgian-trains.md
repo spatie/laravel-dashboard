@@ -3,8 +3,8 @@ title: Belgian trains tile
 weight: 8
 ---
 
-This tile can used on the [Laravel Dashboard](https://github.com/spatie/laravel-dashboard) to display the status of trains in Belgium.
-
+This tile displays the status of trains in Belgium.
+s
 ![screenshot](TODO: add link)
 
 ## Installation

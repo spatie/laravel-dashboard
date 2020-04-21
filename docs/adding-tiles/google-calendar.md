@@ -3,7 +3,7 @@ title: Google calendar tile
 weight: 3
 ---
 
-This tile can used on the [Laravel Dashboard](https://github.com/spatie/laravel-dashboard) to display events on a Google calendar.
+This tile displays events on a Google calendar.
 
 ![screenshot](TODO: add link)
 

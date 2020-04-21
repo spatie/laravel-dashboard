@@ -3,7 +3,7 @@ title: Velo tile
 weight: 7
 ---
 
-This tile can used on the [Laravel Dashboard](https://github.com/spatie/laravel-dashboard) to display the status of Velo, the Antwerp bike sharing system
+This tile displays the status of [Velo](https://www.velo-antwerpen.be/en), the Antwerp bike sharing system.
 
 ![screenshot](TODO: add link)
 
