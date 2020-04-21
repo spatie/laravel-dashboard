@@ -18,6 +18,7 @@ class DashboardServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard');
 
+        Blade::component('dashboard::page', 'dashboard-page');
         Blade::component('dashboard::dashboard', 'dashboard');
         Blade::component(DashboardTileComponent::class, 'dashboard-tile');
     }
