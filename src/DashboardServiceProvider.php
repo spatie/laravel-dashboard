@@ -11,6 +11,10 @@ class DashboardServiceProvider extends ServiceProvider
 {
     public function boot()
     {
+        $this->app->make(Dashboard::class)
+            ->script('https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js')
+            ->inlineStylesheet(file_get_contents(__DIR__.'/../resources/dist/dashboard.min.css'));
+
         if (! class_exists('CreateDashboardTilesTable')) {
             $this->publishes([
                 __DIR__ . '/../database/migrations/create_dashboard_tiles_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_dashboard_tiles_table.php'),
@@ -34,6 +38,8 @@ class DashboardServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/dashboard.php', 'skeleton');
+
+        $this->app->singleton(Dashboard::class);
 
         $this->app->singleton(Sunrise::class, function () {
             return new Sunrise(

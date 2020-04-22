@@ -7,18 +7,17 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@1.3.4/dist/tailwind.css">
-        <livewire:styles />
+        {{ $assets }}
 
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <livewire:scripts />
+        <livewire:styles />
     </head>
     <body>
-        <div id="dashboard" x-data="theme('{{ $theme }}', '{{ $initialMode }}')" x-init="init">
-            <div
-                class="fixed inset-0 w-screen h-screen grid gap-2 p-2"
-                :class="darkMode ? 'bg-gray-900' : 'bg-gray-100'"
-            >
+        <div
+            x-data="theme('{{ $theme }}', '{{ $initialMode }}')"
+            x-init="init"
+            :class="mode === 'dark' ? 'dark-mode' : ''"
+        >
+            <div class="fixed inset-0 w-screen h-screen grid gap-2 p-2 bg-canvas">
                 {{ $slot }}
             </div>
         </div>
@@ -60,5 +59,6 @@
                 },
             });
         </script>
+        <livewire:scripts />
     </body>
 </html>

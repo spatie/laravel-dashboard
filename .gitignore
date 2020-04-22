@@ -1,8 +1,8 @@
-build
-composer.lock
-vendor
-coverage
-.phpunit.result.cache
 .idea
 .php_cs.cache
-
+.phpunit.result.cache
+build
+composer.lock
+coverage
+node_modules
+vendor

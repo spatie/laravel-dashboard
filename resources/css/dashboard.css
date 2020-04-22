@@ -1,0 +1,26 @@
+@tailwind base;
+
+:root {
+    --color-default: rgba(0, 0, 0, 0.9);
+    --color-dimmed: rgba(0, 0, 0, 0.6);
+    --color-invers: rgba(255, 255, 255, 0.9);
+    --color-accent: rgba(25, 71, 147, 0.9);
+    --color-canvas: rgb(240, 240, 240);
+    --color-tile: rgb(255, 255, 255);
+    --color-warning: rgb(255, 172, 51);
+    --color-error: rgb(234, 15, 65);
+}
+
+.dark-mode {
+    --color-default: rgba(255, 255, 255, 0.9);
+    --color-dimmed: rgba(255, 255, 255, 0.6);
+    --color-invers: rgba(0, 0, 0, 0.9);
+    --color-accent: rgb(255, 172, 51);
+    --color-canvas: rgb(27, 27, 27);
+    --color-tile: rgb(39, 39, 39);
+    --color-warning: rgb(143, 86, 0);
+    --color-error: rgb(234, 89, 114);
+}
+
+@tailwind utilities;
+@tailwind components;

@@ -1,7 +1,6 @@
 <div
     style="grid-area: {{ $gridArea }}"
-    class="overflow-hidden rounded relative {{ $show ? '' : 'none' }}"
-    :class="darkMode ? 'bg-gray-800' : 'bg-white'"
+    class="overflow-hidden rounded relative bg-tile {{ $show ? '' : 'none' }}"
 >
     <div class="absolute inset-0 overflow-hidden p-2">
         @isset($title)
