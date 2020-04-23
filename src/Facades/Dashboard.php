@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \Spatie\Dashboard\Dashboard
  */
-class DashboardFacade extends Facade
+class Dashboard extends Facade
 {
     protected static function getFacadeAccessor()
     {

@@ -18,9 +18,13 @@
             :class="mode === 'dark' ? 'dark-mode' : ''"
         >
             <div class="fixed inset-0 w-screen h-screen grid gap-2 p-2 bg-canvas">
+                <livewire:dashboard-update-mode />
                 {{ $slot }}
             </div>
         </div>
+
+        <livewire:scripts />
+
         <script>
             const theme = (theme, initialMode) => ({
                 theme,
@@ -34,7 +38,7 @@
                     }
 
                     if (this.theme === 'auto') {
-                        this.pollForModeChange();
+                        this.listenForUpdateModeEvent();
 
                         return;
                     }
@@ -50,12 +54,14 @@
                     });
                 },
 
-                pollForModeChange() {
-                    //
+                listenForUpdateModeEvent() {
+                    window.livewire.on('updateMode', newMode => {
+                        this.mode = newMode;
+                    })
                 },
             });
         </script>
 
-        <livewire:scripts />
+
     </body>
 </html>

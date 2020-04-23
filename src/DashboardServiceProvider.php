@@ -4,8 +4,10 @@ namespace Spatie\Dashboard;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 use Spatie\Dashboard\Http\Components\DashboardComponent;
 use Spatie\Dashboard\Http\Components\DashboardTileComponent;
+use Spatie\Dashboard\Http\Components\UpdateModeComponent;
 use Spatie\Sun\Sun;
 
 class DashboardServiceProvider extends ServiceProvider
@@ -21,7 +23,8 @@ class DashboardServiceProvider extends ServiceProvider
 
         $this
             ->registerPublishables()
-            ->registerBladeComponents();
+            ->registerBladeComponents()
+            ->registerLivewireComponents();
     }
 
     public function register()
@@ -64,8 +67,15 @@ class DashboardServiceProvider extends ServiceProvider
 
     protected function registerBladeComponents(): self
     {
-        Blade::component(DashboardComponent::class, 'dashboard');
-        Blade::component(DashboardTileComponent::class, 'dashboard-tile');
+        Blade::component('dashboard', DashboardComponent::class);
+        Blade::component('dashboard-tile', DashboardTileComponent::class);
+
+        return $this;
+    }
+
+    protected function registerLivewireComponents(): self
+    {
+        Livewire::component('dashboard-update-mode', UpdateModeComponent::class);
 
         return $this;
     }

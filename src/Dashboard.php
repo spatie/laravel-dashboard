@@ -3,9 +3,12 @@
 namespace Spatie\Dashboard;
 
 use Illuminate\Support\HtmlString;
+use Spatie\Sun\Sun;
 
 class Dashboard
 {
+    const THEMES = ['auto', 'device', 'light', 'dark'];
+
     public array $scripts = [];
 
     public array $inlineScripts = [];
@@ -63,5 +66,38 @@ class Dashboard
         }
 
         return new HtmlString(implode('', $assets));
+    }
+
+    public function getTheme(): string
+    {
+        $defaultTheme = config('dashboard.theme');
+
+        $requestedTheme = request()->query('theme') ?? '';
+
+        return $this->isValidTheme($requestedTheme)
+            ? $requestedTheme
+            : $defaultTheme;
+    }
+
+    public function getMode(): string
+    {
+        return 'light';
+
+        $theme = $this->getTheme();
+
+        if ($theme === 'auto') {
+            return app(Sun::class)->sunIsUp() ? 'light' : 'dark';
+        }
+
+        if ($theme === 'dark') {
+            return 'dark';
+        }
+
+        return 'light';
+    }
+
+    protected function isValidTheme(string $theme): bool
+    {
+        return in_array($theme, self::THEMES);
     }
 }

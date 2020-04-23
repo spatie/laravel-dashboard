@@ -51,7 +51,7 @@
                 "Spatie\\Dashboard\\DashboardServiceProvider"
             ],
             "aliases": {
-                "Dashboard": "Spatie\\Dashboard\\Facades\\DashboardFacade"
+                "Dashboard": "Spatie\\Dashboard\\Facades\\Dashboard"
             }
         }
     },
