@@ -3,6 +3,7 @@
 namespace Spatie\Dashboard\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
 
 class Tile extends Model
 {
@@ -34,6 +35,6 @@ class Tile extends Model
 
     public function getData(string $name)
     {
-        return $this->data[$name] ?? null;
+        return Arr::get($this->data, $name);
     }
 }
