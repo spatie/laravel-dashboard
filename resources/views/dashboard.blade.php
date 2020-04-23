@@ -61,7 +61,9 @@
 
                 listenForUpdateModeEvent() {
                     window.livewire.on('updateMode', newMode => {
-                        this.mode = newMode;
+                        if (newMode !== this.mode) {
+                            this.mode = newMode;
+                        }
                     })
                 },
             });
