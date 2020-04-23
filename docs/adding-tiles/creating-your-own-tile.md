@@ -132,6 +132,8 @@ If you have created a tile that could be beneficial to others, consider sharing 
 
 [This repo](https://github.com/spatie/laravel-dashboard-skeleton-tile) contains a skeleton that can help you kick start your tile package.
 
+
+
 When you have published you package, let us know by sending a mail to info@spatie.be, and we'll mention your tile in our docs.
 
 
