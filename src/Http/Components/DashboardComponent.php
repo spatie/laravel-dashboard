@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\HtmlString;
 use Illuminate\View\Component;
 use Spatie\Dashboard\Dashboard;
-use Spatie\Dashboard\Sun;
+use Spatie\Sun\Sun;
 
 class DashboardComponent extends Component
 {
