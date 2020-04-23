@@ -17,8 +17,9 @@
             x-init="init"
             :class="mode === 'dark' ? 'dark-mode' : ''"
         >
-            <div class="fixed inset-0 w-screen h-screen grid gap-2 p-2 bg-canvas">
+            <div class="fixed inset-0 w-screen h-screen grid gap-2 p-2 bg-canvas text-default">
                 <livewire:dashboard-update-mode />
+
                 {{ $slot }}
             </div>
         </div>
