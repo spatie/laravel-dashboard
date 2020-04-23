@@ -14,6 +14,7 @@ class DashboardServiceProvider extends ServiceProvider
     {
         $this->app->make(Dashboard::class)
             ->script('https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js')
+            ->stylesheet('https://rsms.me/inter/inter.css')
             ->inlineStylesheet(file_get_contents(__DIR__.'/../resources/dist/dashboard.min.css'));
 
         if (! class_exists('CreateDashboardTilesTable')) {

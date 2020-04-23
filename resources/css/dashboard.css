@@ -22,5 +22,13 @@
     --color-error: rgb(234, 89, 114);
 }
 
+html {
+    font-size: 1.2vw;
+}
+
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+}
+
 @tailwind components;
 @tailwind utilities;

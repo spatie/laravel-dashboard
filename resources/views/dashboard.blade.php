@@ -11,7 +11,7 @@
 
         <livewire:styles />
     </head>
-    <body>
+    <body class="leading-snug">
         <div
             x-data="theme('{{ $theme }}', '{{ $initialMode }}')"
             x-init="init"

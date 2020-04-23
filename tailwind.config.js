@@ -1,6 +1,11 @@
+const defaultConfig = require("tailwindcss/defaultConfig");
+
 module.exports = {
     theme: {
         extend: {
+            fontFamily: {
+                sans: ["Inter", ...defaultConfig.theme.fontFamily.sans],
+            },
             colors: {
                 default: "var(--color-default)",
                 invers: "var(--color-invers)",
