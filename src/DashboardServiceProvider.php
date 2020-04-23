@@ -37,7 +37,7 @@ class DashboardServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/dashboard.php', 'skeleton');
+        $this->mergeConfigFrom(__DIR__.'/../config/dashboard.php', 'dashboard');
 
         $this->app->singleton(Dashboard::class);
         $this->app->alias(Dashboard::class, 'dashboard');

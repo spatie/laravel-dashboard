@@ -22,5 +22,5 @@
     --color-error: rgb(234, 89, 114);
 }
 
-@tailwind utilities;
 @tailwind components;
+@tailwind utilities;

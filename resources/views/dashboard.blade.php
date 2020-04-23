@@ -26,10 +26,6 @@
                 theme,
                 mode: initialMode,
 
-                get darkMode() {
-                    return this.mode === 'dark';
-                },
-
                 init() {
                     if (this.theme === 'device') {
                         this.detectDeviceColorScheme();
@@ -38,7 +34,7 @@
                     }
 
                     if (this.theme === 'auto') {
-                        this.pollForThemeChange();
+                        this.pollForModeChange();
 
                         return;
                     }
@@ -54,11 +50,12 @@
                     });
                 },
 
-                pollForThemeChange() {
+                pollForModeChange() {
                     //
                 },
             });
         </script>
+
         <livewire:scripts />
     </body>
 </html>
