@@ -1,0 +1,1 @@
+<script src="https://example.com/app.js" defer></script><script>console.log("hey")</script><link rel="stylesheet" href="https://example.com/app.css"><style>style</style>

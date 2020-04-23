@@ -37,6 +37,7 @@ return [
                         ],
                     ],
                 ],
+                'refresh_interval_in_seconds' => 5,
             ],
     ],
 ];

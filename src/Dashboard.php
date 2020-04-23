@@ -81,8 +81,6 @@ class Dashboard
 
     public function getMode(): string
     {
-        return 'light';
-
         $theme = $this->getTheme();
 
         if ($theme === 'auto') {
