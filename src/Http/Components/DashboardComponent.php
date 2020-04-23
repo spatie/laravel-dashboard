@@ -29,12 +29,15 @@ class DashboardComponent extends Component
                 $this->initialMode = $sunrise->sunIsUp()
                     ? 'light'
                     : 'dark';
+
                 break;
             case 'dark':
                 $this->initialMode = 'dark';
+
                 break;
             default:
                 $this->initialMode = 'light';
+
                 break;
         }
 

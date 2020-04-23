@@ -4,9 +4,9 @@ namespace Spatie\Dashboard;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Spatie\Sun\Sun;
 use Spatie\Dashboard\Http\Components\DashboardComponent;
 use Spatie\Dashboard\Http\Components\DashboardTileComponent;
+use Spatie\Sun\Sun;
 
 class DashboardServiceProvider extends ServiceProvider
 {
