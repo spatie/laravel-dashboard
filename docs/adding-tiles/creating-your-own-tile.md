@@ -122,7 +122,7 @@ In addition to Tailwind, the dashboard defines these extra colors for you to use
 
 By default, these colors are automatically shared by the `textColor`, `borderColor`, and `backgroundColor` utilities, so you can use utility classes like `text-canvas`, `border-error`, and `bg-dimmed`.
 
-These color have a separate value for light and dark mode, so with any luck, your component will also look beautiful in dark mode.
+These colors have a separate value for light and dark mode, so your component will also look beautiful in dark mode.
 
 ## Adding extra JavaScript / CSS
 
