@@ -14,7 +14,6 @@ abstract class TestCase extends Orchestra
         parent::setUp();
 
         $this->setUpDatabase();
-
     }
 
     protected function getPackageProviders($app)
