@@ -104,6 +104,28 @@ Because we are using Livewire components, refreshing is easy. All you need to do
 </x-dashboard-tile>
 ```
 
+## Styling your component
+
+The dashboard is styled using [Tailwind](https://tailwindcss.com). In your component you can use any of the classes Tailwind provides.
+
+In addition to Tailwind, the dashboard defines these extra colors for you to use: `default`, `invers`, `dimmed`, `accent`, `canvas`, `tile`, `warn`, `error`. 
+
+By default, these colors are automatically shared by the `textColor`, `borderColor`, and `backgroundColor` utilities, so you can use utility classes like `text-canvas`, `border-error`, and `bg-dimmed`.
+
+These color have a separate value for light and dark mode, so with any luck, your component will also look beautiful in dark mode.
+
+## Adding extra JavaScript / CSS
+
+If your tile needs to load extra JavaScript or CSS, you can do so using `Spatie\Dashboard\Facades\Dashboard` facade.
+
+```php
+Dashboard::script($urlToScript);
+Dashboard::inlineScript($extraJavaScript);
+
+Dashboard::stylesheet($urlToStyleSheet);
+Dashboard::inlineStylesheet($extraCss);
+```
+
 ## Packaging up your component
 
 If you have created a tile that could be beneficial to others, consider sharing your awesome tile with the community by packaging it up.
