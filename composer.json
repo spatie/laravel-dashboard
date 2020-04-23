@@ -19,7 +19,7 @@
         "php": "^7.4",
         "illuminate/database": "^7.5",
         "illuminate/view": "^7.5",
-        "livewire/livewire": "^1.0.12",
+        "livewire/livewire": "^1.0.13",
         "spatie/sun": "^1.0"
     },
     "require-dev": {

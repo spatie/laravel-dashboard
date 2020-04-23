@@ -92,14 +92,24 @@ In your view, you can do with the data whatever you want.
 
 ## Refreshing the component
 
-Because we are using Livewire components, refreshing is easy. All you need to do is to add `wire:poll` to your view. In this example the component will be refreshed every 60 seconds.
+To refresh a tile, you should pass an amount of seconds to the `refresh-interval` prop of `x-dashboard-tile`.  In this example the component will be refreshed every 60 seconds.
 
 ```html
-<x-dashboard-tile :position="$position">
-    <div wire:poll.60s>
-        <h1>Dummy</h1>
+<x-dashboard-tile :position="$position" refresh-interval="60">
+    <h1>Dummy</h1>
+    
+    {{-- display the $data --}}
+</x-dashboard-tile>
+```
 
-        {{-- display the $data --}}
+If your component only needs to be refreshed partials, you can add `wire:poll` to your view (instead of using the `refresh-interval` prop.
+
+```html
+<x-dashboard-tile :position="$position" >
+    <h1>Dummy</h1>
+    
+     <div wire:poll.60s>
+        Only this part will be refreshed
     </div>
 </x-dashboard-tile>
 ```
