@@ -17,6 +17,34 @@ class DashboardServiceProvider extends ServiceProvider
             ->stylesheet('https://rsms.me/inter/inter.css')
             ->inlineStylesheet(file_get_contents(__DIR__.'/../resources/dist/dashboard.min.css'));
 
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard');
+
+        $this
+            ->registerPublishables()
+            ->registerBladeComponents();
+    }
+
+    public function register()
+    {
+        $this->mergeConfigFrom(__DIR__.'/../config/dashboard.php', 'dashboard');
+
+        $this->app->singleton(Dashboard::class);
+        $this->app->alias(Dashboard::class, 'dashboard');
+
+        $this->app->singleton(Sun::class, function () {
+            return new Sun(
+                config('dashboard.auto_theme_location.lat'),
+                config('dashboard.auto_theme_location.lng')
+            );
+        });
+
+        $this->app->when(DashboardComponent::class)
+            ->needs('$defaultTheme')
+            ->give(config('dashboard.theme'));
+    }
+
+    protected function registerPublishables(): self
+    {
         if (! class_exists('CreateDashboardTilesTable')) {
             $this->publishes([
                 __DIR__ . '/../database/migrations/create_dashboard_tiles_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_dashboard_tiles_table.php'),
@@ -31,29 +59,14 @@ class DashboardServiceProvider extends ServiceProvider
             __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard'),
         ], 'dashboard-views');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard');
-
-        Blade::component(DashboardComponent::class, 'dashboard');
-        Blade::component(DashboardTileComponent::class, 'dashboard-tile');
+        return $this;
     }
 
-    public function register()
+    protected function registerBladeComponents(): self
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/dashboard.php', 'dashboard');
+        Blade::component(DashboardComponent::class, 'dashboard');
+        Blade::component(DashboardTileComponent::class, 'dashboard-tile');
 
-        $this->app->singleton(Dashboard::class);
-        $this->app->alias(Dashboard::class, 'dashboard');
-
-
-        $this->app->singleton(Sun::class, function () {
-            return new Sun(
-                config('dashboard.auto_theme_location.lat'),
-                config('dashboard.auto_theme_location.lng')
-            );
-        });
-
-        $this->app->when(DashboardComponent::class)
-            ->needs('$defaultTheme')
-            ->give(config('dashboard.theme'));
+        return $this;
     }
 }
