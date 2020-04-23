@@ -10,13 +10,17 @@ class DashboardTileComponent extends Component
 
     public ?string $title;
 
+    public bool $fade;
+
     public bool $show;
 
-    public function __construct(string $position, ?string $title = null, bool $show = true)
+    public function __construct(string $position, ?string $title = null, bool $fade = true, bool $show = true)
     {
         $this->gridArea = $this->convertToGridArea($position);
 
         $this->title = $title;
+
+        $this->fade = $fade;
 
         $this->show = $show;
     }

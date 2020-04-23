@@ -21,7 +21,7 @@ module.exports = {
                 accent: "var(--color-accent)",
                 canvas: "var(--color-canvas)",
                 tile: "var(--color-tile)",
-                warn: "var(--color-warn)",
+                warning: "var(--color-warning)",
                 error: "var(--color-error)",
             },
             borderColor: (theme) => ({
