@@ -18,28 +18,15 @@ class DashboardComponent extends Component
 
     public HtmlString $assets;
 
-    public function __construct(Dashboard $dashboard, Request $request, Sun $sunrise, string $defaultTheme)
+    public function __construct(Dashboard $dashboard, Request $request, string $defaultTheme)
     {
-        $this->theme = in_array($request->query('theme'), self::THEMES, true)
-            ? $request->query('theme')
+        $requestedTheme = $request->query('theme') ?? '';
+
+        $this->theme = $this->isValidTheme($requestedTheme)
+            ? $requestedTheme
             : $defaultTheme;
 
-        switch ($this->theme) {
-            case 'auto':
-                $this->initialMode = $sunrise->sunIsUp()
-                    ? 'light'
-                    : 'dark';
-
-                break;
-            case 'dark':
-                $this->initialMode = 'dark';
-
-                break;
-            default:
-                $this->initialMode = 'light';
-
-                break;
-        }
+        $this->initialMode = $this->determineMode($this->theme);
 
         $this->assets = $dashboard->assets();
     }
@@ -47,5 +34,23 @@ class DashboardComponent extends Component
     public function render()
     {
         return view('dashboard::dashboard');
+    }
+
+    protected function isValidTheme(string $theme): bool
+    {
+        return in_array($theme, self::THEMES);
+    }
+
+    protected function determineMode(string $theme): string
+    {
+        if ($theme === 'auto') {
+            return app(Sun::class)->sunIsUp() ? 'light' : 'dark';
+        }
+
+        if ($theme === 'dark') {
+            return 'dark';
+        }
+
+        return 'light';
     }
 }

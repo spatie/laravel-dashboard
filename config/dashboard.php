@@ -1,6 +1,9 @@
 <?php
 
 return [
+    /*
+     *
+     */
     'theme' => 'auto',
 
     'auto_theme_location' => [
