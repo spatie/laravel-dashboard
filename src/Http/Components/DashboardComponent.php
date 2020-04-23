@@ -2,11 +2,9 @@
 
 namespace Spatie\Dashboard\Http\Components;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\HtmlString;
 use Illuminate\View\Component;
 use Spatie\Dashboard\Dashboard;
-use Spatie\Sun\Sun;
 
 class DashboardComponent extends Component
 {
