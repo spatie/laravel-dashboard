@@ -8,15 +8,24 @@ class DashboardTileComponent extends Component
 {
     public string $gridArea;
 
+    public ?int $refreshIntervalInSeconds;
+
     public ?string $title;
 
     public bool $fade;
 
     public bool $show;
 
-    public function __construct(string $position, ?string $title = null, bool $fade = true, bool $show = true)
-    {
+    public function __construct(
+        string $position,
+        ?int $refreshInterval = null,
+        ?string $title = null,
+        bool $fade = true,
+        bool $show = true
+    ) {
         $this->gridArea = $this->convertToGridArea($position);
+
+        $this->refreshIntervalInSeconds = $refreshInterval;
 
         $this->title = $title;
 

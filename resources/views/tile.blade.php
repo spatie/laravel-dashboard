@@ -1,6 +1,7 @@
 <div
     style="grid-area: {{ $gridArea }}"
     class="overflow-hidden rounded relative bg-tile {{ $show ? '' : 'none' }}"
+    {{ $refreshIntervalInSeconds ? "wire:poll.{$refreshIntervalInSeconds}s" : ''  }}
 >
     <div
         class="absolute inset-0 overflow-hidden p-4"
