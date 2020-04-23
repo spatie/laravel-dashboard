@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\HtmlString;
 use Illuminate\View\Component;
 use Spatie\Dashboard\Dashboard;
-use Spatie\Dashboard\Sunrise;
+use Spatie\Dashboard\Sun;
 
 class DashboardComponent extends Component
 {
@@ -18,7 +18,7 @@ class DashboardComponent extends Component
 
     public HtmlString $assets;
 
-    public function __construct(Dashboard $dashboard, Request $request, Sunrise $sunrise, string $defaultTheme)
+    public function __construct(Dashboard $dashboard, Request $request, Sun $sunrise, string $defaultTheme)
     {
         $this->theme = in_array($request->query('theme'), self::THEMES, true)
             ? $request->query('theme')

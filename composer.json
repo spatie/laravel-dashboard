@@ -48,7 +48,10 @@
         "laravel": {
             "providers": [
                 "Spatie\\Dashboard\\DashboardServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Dashboard": "Spatie\\Dashboard\\Facades\\DashboardFacade"
+            }
         }
     },
     "minimum-stability": "dev",

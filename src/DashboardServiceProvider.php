@@ -40,9 +40,11 @@ class DashboardServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/dashboard.php', 'skeleton');
 
         $this->app->singleton(Dashboard::class);
+        $this->app->alias(Dashboard::class, 'dashboard');
 
-        $this->app->singleton(Sunrise::class, function () {
-            return new Sunrise(
+
+        $this->app->singleton(Sun::class, function () {
+            return new Sun(
                 config('dashboard.auto_theme_location.lat'),
                 config('dashboard.auto_theme_location.lng')
             );
