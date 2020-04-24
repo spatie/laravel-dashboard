@@ -31,6 +31,7 @@ return [
             ],
             'refresh_interval_in_seconds' => 60,
         ],
+    ],
 ];
 ```
 
@@ -52,7 +53,7 @@ In your dashboard view you use the `livewire:calendar-tile` component. You shoul
 
 ```html
 <x-dashboard>
-    <livewire:calendar-tile position="e7:e16" :calendar-id="config('google-calendar.calendar_id')"/>
+    <livewire:calendar-tile position="e7:e16" :calendar-id="config('dashboard.tiles.calendar.ids.0')"/>
 </x-dashboard>
 ```
 
