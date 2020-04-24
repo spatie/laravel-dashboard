@@ -12,7 +12,7 @@ composer require spatie/laravel-dashboard
 To create the `dashboard_tiles` table, you must create and run the migration.
 
 ```bash
-php artisan vendor:publish --provider="Spatie\Dashboard\DashboardServiceProvider" --tag="mailcoach-migrations"
+php artisan vendor:publish --provider="Spatie\Dashboard\DashboardServiceProvider" --tag="dashboard-migrations"
 php artisan migrate
 ```
 

@@ -51,7 +51,7 @@ class DashboardServiceProvider extends ServiceProvider
         if (! class_exists('CreateDashboardTilesTable')) {
             $this->publishes([
                 __DIR__ . '/../database/migrations/create_dashboard_tiles_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_dashboard_tiles_table.php'),
-            ], 'migrations');
+            ], 'dashboard-migrations');
         }
 
         $this->publishes([
