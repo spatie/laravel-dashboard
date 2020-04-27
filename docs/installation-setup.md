@@ -3,6 +3,11 @@ title: Installation & setup
 weight: 4
 ---
 
+
+
+**Currently, this package is not available. We'll release it as soon as we hit 50 sponsors [on GitHub](https://github.com/sponsors/spatie).**
+
+
 You can install the package via composer:
 
 ```bash
