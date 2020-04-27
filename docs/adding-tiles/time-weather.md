@@ -1,5 +1,5 @@
 ---
-title: Google calendar tile
+title: Time and Weather tile
 weight: 3
 ---
 
