@@ -4,8 +4,8 @@ weight: 8
 ---
 
 This tile displays the status of trains in Belgium.
-s
-![screenshot](TODO: add link)
+
+![screenshot](../../docs/images/trains.png)
 
 ## Installation
 

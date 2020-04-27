@@ -5,7 +5,7 @@ weight: 3
 
 This tile displays events on a Google calendar.
 
-![screenshot](TODO: add link)
+![screenshot](../../docs/images/calendar.png)
 
 ## Installation
 

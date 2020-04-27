@@ -5,7 +5,7 @@ weight: 3
 
 This tile displays the time, weather, and optionally a rain forecast.
 
-![screenshot](TODO: add link)
+![screenshot](../../docs/images/time-weather.png)
 
 ## Installation
 
@@ -14,8 +14,6 @@ You can install the tile via composer:
 ```bash
 composer require spatie/laravel-dashboard-time-weather-tile
 ```
-
-You must also [set up](https://github.com/spatie/laravel-google-calendar#installation) the `spatie/laravel-google-calendar` package. That package will fetch data for Google Calendar. Here are instructions that show how you can [obtain credentials to communicate with Google Calendar](https://github.com/spatie/laravel-google-calendar#how-to-obtain-the-credentials-to-communicate-with-google-calendar).
 
 In the `dashboard` config file, you must add this configuration in the `tiles` key. The `ids` should contain any calendar id that you want to display on the dashboard.
 

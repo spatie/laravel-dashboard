@@ -5,7 +5,7 @@ weight: 5
 
 This tile displays Twitter mentions.
 
-![screenshot](TODO: add link)
+![screenshot](../../docs/images/twitter.png)
 
 ## Installation
 

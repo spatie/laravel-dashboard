@@ -5,7 +5,7 @@ weight: 4
 
 This tile displays sites that [Oh Dear](https://ohdear.app) detects as down.
 
-![screenshot](TODO: add link)
+![screenshot](../../docs/images/oh-dear.png)
 
 ## Installation
 
