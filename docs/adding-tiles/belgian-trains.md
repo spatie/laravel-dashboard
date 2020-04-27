@@ -5,7 +5,7 @@ weight: 8
 
 This tile displays the status of trains in Belgium.
 
-![screenshot](../../docs/images/trains.png)
+![screenshot](https://docs.spatie.be/laravel-dashboard/v1/images/trains.png)
 
 ## Installation
 

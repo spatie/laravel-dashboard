@@ -5,7 +5,7 @@ weight: 5
 
 This tile displays Twitter mentions.
 
-![screenshot](../../docs/images/twitter.png)
+![screenshot](https://docs.spatie.be/laravel-dashboard/v1/images/twitter.png)
 
 ## Installation
 
