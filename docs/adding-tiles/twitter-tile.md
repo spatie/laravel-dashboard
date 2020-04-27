@@ -15,8 +15,6 @@ You can install the package via composer:
 composer require spatie/laravel-dashboard-twitter-tile
 ```
 
-You must also [set up](https://github.com/spatie/laravel-google-calendar#installation) the `spatie/laravel-google-calendar` package. That package will fetch data for Google Calendar. Here are instructions that show how you can [obtain credentials to communicate with Google Calendar](https://github.com/spatie/laravel-google-calendar#how-to-obtain-the-credentials-to-communicate-with-google-calendar).
-
 In the `dashboard` config file, you must add this configuration in the `tiles` key. You can add a configuration in the `configurations` key per Twitter tile that you want to display. Any tweet that contains one of the strings in `listen_for` will be display on the dashboard.
 
 ```php
