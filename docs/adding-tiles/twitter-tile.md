@@ -49,7 +49,7 @@ To starting listening for incoming tweets of the configuration named `default` m
 
 ```bash
 php artisan dashboard:listen-twitter-mentions
-``
+```
 
 This command will never end. In production should probably want to use something like Supervisord to keep this this task running and to automatically start it when your sytem restarts.
 
