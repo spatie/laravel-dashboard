@@ -11,8 +11,8 @@ class DashboardTileComponentTest extends TestCase
     /** @test */
     public function it_can_render_a_tile_component()
     {
-        //TODO
+        $renderedHtml = $this->renderBladeString('<x-dashboard-tile position="a1">Test</x-dashboard-tile>');
 
-        $this->assertTrue(true);
+        $this->assertMatchesSnapshot($renderedHtml);
     }
 }

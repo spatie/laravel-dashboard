@@ -2,7 +2,10 @@
 
 namespace Spatie\Dashboard\Tests;
 
+use CreateDashboardTilesTable;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\Dashboard\DashboardServiceProvider;
@@ -28,8 +31,20 @@ abstract class TestCase extends Orchestra
     {
         Schema::dropIfExists('dashboard_tiles');
 
-
         include_once __DIR__.'/../database/migrations/create_dashboard_tiles_table.php.stub';
-        (new \CreateDashboardTilesTable())->up();
+        (new CreateDashboardTilesTable())->up();
+    }
+
+    protected function renderBladeString(string $bladeContent)
+    {
+        $tempfilePath = tempnam(sys_get_temp_dir(), 'tests') . '.blade.php';
+
+        file_put_contents($tempfilePath, $bladeContent);
+
+        View::addLocation(sys_get_temp_dir());
+
+        $bladeViewName = Str::before(pathinfo($tempfilePath, PATHINFO_BASENAME), '.blade.php');
+
+        return view($bladeViewName)->render();
     }
 }

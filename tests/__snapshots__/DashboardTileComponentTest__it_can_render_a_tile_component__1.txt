@@ -1,0 +1,13 @@
+<div
+    style="grid-area: 1 / 1;"
+    class="overflow-hidden rounded relative bg-tile"
+    
+>
+    <div
+        class="absolute inset-0 overflow-hidden p-4"
+                    style="-webkit-mask-image: linear-gradient(black, black calc(100% - 1rem), transparent)"
+            >
+        Test
+    </div>
+</div>
+ 
