@@ -2,17 +2,21 @@
 
 namespace Spatie\Dashboard\Tests;
 
-use Spatie\Snapshots\MatchesSnapshots;
-
 class DashboardTileComponentTest extends TestCase
 {
-    use MatchesSnapshots;
-
     /** @test */
-    public function it_can_render_a_tile_component()
+    public function it_correctly_translates_a_single_position_to_grid_css_styles()
     {
         $renderedHtml = $this->renderBladeString('<x-dashboard-tile position="a1">Test</x-dashboard-tile>');
 
-        $this->assertMatchesSnapshot($renderedHtml);
+        $this->assertStringContainsString('grid-area: 1 / 1;', $renderedHtml);
+    }
+
+    /** @test */
+    public function it_correctly_translates_a_range_position_to_grid_css_styles()
+    {
+        $renderedHtml = $this->renderBladeString('<x-dashboard-tile position="a1:b2">Test</x-dashboard-tile>');
+
+        $this->assertStringContainsString('1 / 1 / 3 / 3;', $renderedHtml);
     }
 }

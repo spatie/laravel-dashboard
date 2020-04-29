@@ -37,13 +37,13 @@ abstract class TestCase extends Orchestra
 
     protected function renderBladeString(string $bladeContent)
     {
-        $tempfilePath = tempnam(sys_get_temp_dir(), 'tests') . '.blade.php';
+        $tempFilePath = tempnam(sys_get_temp_dir(), 'tests') . '.blade.php';
 
-        file_put_contents($tempfilePath, $bladeContent);
+        file_put_contents($tempFilePath, $bladeContent);
 
         View::addLocation(sys_get_temp_dir());
 
-        $bladeViewName = Str::before(pathinfo($tempfilePath, PATHINFO_BASENAME), '.blade.php');
+        $bladeViewName = Str::before(pathinfo($tempFilePath, PATHINFO_BASENAME), '.blade.php');
 
         return view($bladeViewName)->render();
     }
