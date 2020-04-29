@@ -35,13 +35,17 @@ abstract class TestCase extends Orchestra
         (new CreateDashboardTilesTable())->up();
     }
 
-    protected function renderBladeString(string $bladeContent)
+    protected function renderBladeString(string $bladeContent): string
     {
-        $tempFilePath = tempnam(sys_get_temp_dir(), 'tests') . '.blade.php';
+        $temporaryDirectory = sys_get_temp_dir();
+
+        if (! in_array($temporaryDirectory, View::getFinder()->getPaths())) {
+            View::addLocation(sys_get_temp_dir());
+        }
+
+        $tempFilePath = tempnam($temporaryDirectory, 'tests') . '.blade.php';
 
         file_put_contents($tempFilePath, $bladeContent);
-
-        View::addLocation(sys_get_temp_dir());
 
         $bladeViewName = Str::before(pathinfo($tempFilePath, PATHINFO_BASENAME), '.blade.php');
 
