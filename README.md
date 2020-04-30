@@ -4,11 +4,9 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-dashboard/run-tests?label=tests)](https://github.com/spatie/laravel-dashboard-calendar-tile/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard-calendar-tile)
 
-Using this package you can create a beautiful dashboard Like this one.
+Using this package you can create a beautiful dashboards.
 
-![Screenshot of dashboard]()
-
-The dashboard consists of tile which are, under the hood, Livewire components that can update themselves via polling. 
+The dashboard consists of tiles which are, under the hood, Livewire components that can update themselves via polling. 
 
 This package contains the base functionality. It contains:
 
