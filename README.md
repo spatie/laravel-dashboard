@@ -1,8 +1,8 @@
 # Create beautiful dashboards powered by Livewire
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard-calendar-tile)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-dashboard/run-tests?label=tests)](https://github.com/spatie/laravel-dashboard-calendar-tile/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard-calendar-tile)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-dashboard/run-tests?label=tests)](https://github.com/spatie/laravel-dashboard/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard)
 
 Using this package you can create beautiful dashboards. The dashboard consists of tile which are, under the hood, Livewire components that can update themselves via polling. 
 
