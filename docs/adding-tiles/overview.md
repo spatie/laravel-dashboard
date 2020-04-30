@@ -5,7 +5,7 @@ weight: 1
 
 On the dashboard a collection of tiles is displayed. You can [create your own tile](/laravel-dashboard/v1/adding-tiles/creating-your-own-tile) or use any of these pre packages ones.
 
-- [Time and Weather](/laravel-dashboard/v1/adding-tiles/google-calendar): displays the current time and weather at your location
+- [Time and Weather](/laravel-dashboard/v1/adding-tiles/time-weather): displays the current time and weather at your location
 - [Calendar](/laravel-dashboard/v1/adding-tiles/google-calendar): displays events that are on a Google Calendar
 - [Twitter](/laravel-dashboard/v1/adding-tiles/twitter): displays mentions on Twitter
 - [Oh Dear Uptime](/laravel-dashboard/v1/adding-tiles/oh-dear-uptime): displays sites that are detected as down by [Oh Dear](https://ohdear.app)
