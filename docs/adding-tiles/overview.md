@@ -19,4 +19,4 @@ Here are tiles created by the community:
 - [Cloudflare Stats](https://github.com/owenvoke/laravel-dashboard-cloudflare-stats-tile): display statistics from Cloudflare
 - [Google Fit](https://github.com/owenvoke/laravel-dashboard-google-fit-tile): display statistics from Google Fit
 
-If you have creating a tile package, let us know! Sending a mail to info@spatie.be, and we'll mention your tile in the list above.
+If you have creating a tile package, let us know! Send a mail to info@spatie.be, and we'll add your tile to the list above.
