@@ -15,7 +15,11 @@ You can install the tile via composer:
 composer require spatie/laravel-dashboard-time-weather-tile
 ```
 
-In the `dashboard` config file, you must add this configuration in the `tiles` key. The `ids` should contain any calendar id that you want to display on the dashboard.
+In the `dashboard` config file, you must add this configuration in the `tiles` key.
+
+Sign up at https://openweathermap.org/ to obtain `OPEN_WEATHER_MAP_KEY`
+
+Head to https://www.buienradar.nl/ to get your cities `BUIENRADAR_LATITUDE`and `BUIENRADAR_LONGITUDE`
 
 ```php
 // in config/dashboard.php
