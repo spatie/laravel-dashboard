@@ -17,6 +17,7 @@ There are the tiles created by us:
 Here are tiles created by the community:
 
 - [Cloudflare Stats](https://github.com/owenvoke/laravel-dashboard-cloudflare-stats-tile): display statistics from Cloudflare
+- [Football standings](https://github.com/kayschima/laravel-dashboard-footballdata-standings-tile): display football standings (powered by [football-data.org](https://football-data.org))
 - [Google Fit](https://github.com/owenvoke/laravel-dashboard-google-fit-tile): display statistics from Google Fit
 
 If you have creating a tile package, let us know! Send a mail to info@spatie.be, and we'll add your tile to the list above.
