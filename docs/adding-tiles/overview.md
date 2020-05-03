@@ -19,6 +19,7 @@ Here are tiles created by the community:
 - [Cloudflare Stats](https://github.com/owenvoke/laravel-dashboard-cloudflare-stats-tile): display statistics from Cloudflare
 - [Football standings](https://github.com/kayschima/laravel-dashboard-footballdata-standings-tile): display football standings (powered by [football-data.org](https://football-data.org))
 - [Google Fit](https://github.com/owenvoke/laravel-dashboard-google-fit-tile): display statistics from Google Fit
+- [Reddit](https://github.com/jeop10/laravel-dashboard-reddit-tile): Display a list of the posts of a subreddit                                                       
 - [Uptime Robot](https://github.com/VineVax/laravel-dashboard-uptime-robot-tile): display sites monitored by Uptime Robot
 
 If you have creating a tile package, let us know! Send a mail to info@spatie.be, and we'll add your tile to the list above.
