@@ -12,7 +12,7 @@ This tile displays the status of trains in Belgium.
 You can install the package via composer:
 
 ```bash
-composer require spatie/laravel-belgian-trains-tile
+composer require spatie/laravel-dashboard-belgian-trains-tile
 ```
 
 In the `dashboard` config file, you must add this configuration in the `tiles` key. The value `belgian_trains` should be an array of which each value is array with keys `departure`, `destination` and `label`
