@@ -26,6 +26,7 @@ return [
         'velo' => [
             'stations' => [],
             'refresh_interval_in_seconds' => 60,
+        ],
     ],
 ];
 ```
