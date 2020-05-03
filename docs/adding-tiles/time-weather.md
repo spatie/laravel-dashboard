@@ -67,5 +67,5 @@ In your dashboard view you use the `livewire:time-weather-tile` component.
 If you want to customize the view used to render this tile, run this command:
 
 ```bash
-php artisan vendor:publish --provider="Spatie\CalendarTile\CalendarTileServiceProvider" --tag="dashboard-calendar-tile-views"
+php artisan vendor:publish --provider="Spatie\TimeWeatherTile\TimeWeatherTileServiceProvider" --tag="dashboard-time-weather-tile-views"
 ```
