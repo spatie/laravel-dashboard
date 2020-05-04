@@ -17,7 +17,7 @@ In your Blade view, use the `dashboard` Blade view component.
 </x-dashboard>
 ```
 
-Inside the `x-dashboard` tag, you can use any of [available tiles](/laravel-dashboard/v1/adding-tiles/overview). You can also [create your own tile](/laravel-dashboard/v1/creating-your-own-tile).
+Inside the `x-dashboard` tag, you can use any of [available tiles](/laravel-dashboard/v1/adding-tiles/overview). You can also [create your own tile](/laravel-dashboard/v1/adding-tiles/creating-your-own-tile/).
 
 Here's an example
 
