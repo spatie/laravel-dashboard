@@ -16,6 +16,7 @@ There are the tiles created by us:
 
 Here are tiles created by the community:
 
+- [Citybikes](https://github.com/Astrotomic/laravel-dashboard-citybikes-tile): display the status of [Citybikes](https://citybik.es) an API for bike services all over the world
 - [Cloudflare Stats](https://github.com/owenvoke/laravel-dashboard-cloudflare-stats-tile): display statistics from Cloudflare
 - [Football standings](https://github.com/kayschima/laravel-dashboard-footballdata-standings-tile): display football standings (powered by [football-data.org](https://football-data.org))
 - [Google Fit](https://github.com/owenvoke/laravel-dashboard-google-fit-tile): display statistics from Google Fit
