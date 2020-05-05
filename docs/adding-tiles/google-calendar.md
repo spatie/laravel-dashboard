@@ -35,7 +35,7 @@ return [
 ];
 ```
 
-In `app\Console\Kernel.php` you should schedule the `Spatie\CalendarTile\FetchCalendarEventsCommand` to run. You can let in run every minute if you want. You could also run is less frequently if you fast updates on the dashboard aren't that important for this tile.
+In `app\Console\Kernel.php` you should schedule the `Spatie\CalendarTile\FetchCalendarEventsCommand` to run. You can let in run every minute if you want. You could also run this less frequently if fast updates on the dashboard aren't that important for this tile.
 
 ```php
 // in app/console/Kernel.php
