@@ -22,5 +22,6 @@ Here are tiles created by the community:
 - [Reddit](https://github.com/jeop10/laravel-dashboard-reddit-tile): display a list of the posts of a subreddit
 - [Spotify](https://github.com/ashbakernz/laravel-dashboard-spotify-tile): displays music that you are playing on Spotify 
 - [Uptime Robot](https://github.com/VineVax/laravel-dashboard-uptime-robot-tile): display sites monitored by Uptime Robot
+- [Citybikes](https://github.com/Astrotomic/laravel-dashboard-citybikes-tile): display the status of [Citybikes](https://citybik.es) an API for bike services all over the world
 
 If you have creating a tile package, let us know! Send a mail to info@spatie.be, and we'll add your tile to the list above.
