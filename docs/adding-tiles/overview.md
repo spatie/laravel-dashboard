@@ -20,6 +20,7 @@ Here are tiles created by the community:
 - [Cloudflare Stats](https://github.com/owenvoke/laravel-dashboard-cloudflare-stats-tile): display statistics from Cloudflare
 - [Football standings](https://github.com/kayschima/laravel-dashboard-footballdata-standings-tile): display football standings (powered by [football-data.org](https://football-data.org))
 - [Google Fit](https://github.com/owenvoke/laravel-dashboard-google-fit-tile): display statistics from Google Fit
+- [Offset Earth](https://github.com/owenvoke/laravel-dashboard-offset-earth-tile): display statistics from Offset Earth
 - [Pi-hole](https://github.com/owenvoke/laravel-dashboard-pihole-tile): display statistics from Pi-hole
 - [Reddit](https://github.com/jeop10/laravel-dashboard-reddit-tile): display a list of the posts of a subreddit
 - [Spotify](https://github.com/ashbakernz/laravel-dashboard-spotify-tile): displays music that you are playing on Spotify 
