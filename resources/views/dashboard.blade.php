@@ -9,6 +9,8 @@
 
         {{ $assets }}
 
+        @stack('assets')
+
         <livewire:styles />
     </head>
     <body class="leading-snug">
@@ -25,6 +27,8 @@
         </div>
 
         <livewire:scripts />
+
+        @stack('scripts')
 
         <script>
             const theme = (theme, initialMode) => ({
