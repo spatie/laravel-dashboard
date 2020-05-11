@@ -12,7 +12,7 @@ This tile displays sites that [Oh Dear](https://ohdear.app) detects as down.
 You can install the package via composer:
 
 ```bash
-composer require spatie/laravel-dashboard-oh-dear-tile
+composer require spatie/laravel-dashboard-oh-dear-uptime-tile
 ```
 
 This package listens for events coming from Oh Dear using the `ohdearapp/laravel-ohdear-webhooks` package. Before you can use this tile, you must set up `laravel-ohdear-webhooks`. You'll find instructions [in this section in the Oh Dear docs](https://ohdear.app/docs/integrations/webhooks/laravel-package).
