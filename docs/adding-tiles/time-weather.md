@@ -48,8 +48,8 @@ If you want to rain forecast, and the Buienradar service supports your location,
 protected function schedule(Schedule $schedule)
 {
     // ...
-    $schedule->command(Spatie\TimeWeatherTile\Commands\FetchOpenWeatherMapDataCommand::class)->everyMinute();
-    $schedule->command(Spatie\TimeWeatherTile\Commands\FetchBuienradarForecastsCommand::class)->everyMinute();
+    $schedule->command(\Spatie\TimeWeatherTile\Commands\FetchOpenWeatherMapDataCommand::class)->everyMinute();
+    $schedule->command(\Spatie\TimeWeatherTile\Commands\FetchBuienradarForecastsCommand::class)->everyMinute();
 }
 ```
 
