@@ -38,9 +38,9 @@ return [
 ];
 ```
 
-In `app\Console\Kernel.php` you should schedule the `Spatie\CalendarTile\FetchOpenWeatherMapDataCommand` to run every minute. 
+In `app\Console\Kernel.php` you should schedule the `Spatie\TimeWeatherTile\FetchOpenWeatherMapDataCommand` to run every minute. 
 
-If you want to rain forecast, and the Buienradar service supports your location, you can optionally schedule the `Spatie\CalendarTile\FetchBuienradarForecastsCommand` too.
+If you want to rain forecast, and the Buienradar service supports your location, you can optionally schedule the `Spatie\TimeWeatherTile\FetchBuienradarForecastsCommand` too.
 
 ```php
 // in app/console/Kernel.php
