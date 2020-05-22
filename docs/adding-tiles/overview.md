@@ -9,7 +9,7 @@ There are the tiles created by us:
 
 - [Time and Weather](/laravel-dashboard/v1/adding-tiles/time-weather): displays the current time and weather at your location
 - [Calendar](/laravel-dashboard/v1/adding-tiles/google-calendar): displays events that are on a Google Calendar
-- [Twitter](/laravel-dashboard/v1/adding-tiles/twitter): displays mentions on Twitter
+- [Twitter](/laravel-dashboard/v1/adding-tiles/twitter-tile): displays mentions on Twitter
 - [Oh Dear Uptime](/laravel-dashboard/v1/adding-tiles/oh-dear-uptime): displays sites that are detected as down by [Oh Dear](https://ohdear.app)
 - [Belgian Trains](/laravel-dashboard/v1/adding-tiles/belgian-trains): displays real-time info on Belgian trains
 - [Velo](/laravel-dashboard/v1/adding-tiles/velo): displays the status of [Velo](https://www.velo-antwerpen.be/en), the Antwerp bike sharing system
