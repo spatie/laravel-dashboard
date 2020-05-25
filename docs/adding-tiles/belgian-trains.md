@@ -51,7 +51,7 @@ protected function schedule(Schedule $schedule)
 
 ## Usage
 
-In your dashboard view you use the `livewire:velo-tile` component. 
+In your dashboard view you use the `livewire:belgian-trains-tile` component. 
 
 ```html
 <x-dashboard>
