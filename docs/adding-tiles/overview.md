@@ -25,6 +25,7 @@ Here are tiles created by the community:
 - [Google Fit](https://github.com/owenvoke/laravel-dashboard-google-fit-tile): display statistics from Google Fit
 - [Health Check](https://github.com/tylerwoonton/laravel-dashboard-health-check-tile): display health of your applications using the [Laravel Health Check](https://github.com/ukfast/laravel-health-check) package
 - [Offset Earth](https://github.com/owenvoke/laravel-dashboard-offset-earth-tile): display statistics from Offset Earth
+- [Packagist data](https://packagist.org/packages/tjvb/laravel-dashboard-packagist-tile): Display statistics from Packagist (downloads, favers, github stars) or the packages you want to folow.
 - [Pi-hole](https://github.com/owenvoke/laravel-dashboard-pihole-tile): display statistics from Pi-hole
 - [PingPing](https://github.com/Astrotomic/laravel-dashboard-pingping-tile): display sites monitored by [PingPing](https://pingping.io)
 - [Reddit](https://github.com/jeop10/laravel-dashboard-reddit-tile): display a list of the posts of a subreddit
