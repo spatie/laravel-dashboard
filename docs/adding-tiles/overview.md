@@ -36,4 +36,4 @@ Here are tiles created by the community:
 - [Vapor Metrics](https://github.com/fidum/laravel-dashboard-vapor-metrics-tile): display metrics for your [Laravel Vapor](https://vapor.laravel.com) projects!
 
 
-If you have creating a tile package, let us know! Send a mail to info@spatie.be, and we'll add your tile to the list above.
+If you have created a tile package, let us know! Send a mail to info@spatie.be, and we'll add your tile to the list above.
