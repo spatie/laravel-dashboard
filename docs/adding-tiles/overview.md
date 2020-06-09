@@ -24,6 +24,7 @@ Here are tiles created by the community:
 - [Football standings](https://github.com/kayschima/laravel-dashboard-footballdata-standings-tile): display football standings (powered by [football-data.org](https://football-data.org))
 - [Forge](https://github.com/aglipanci/laravel-dashboard-forge-tile): display information from [Laravel Forge](https://forge.laravel.com)
 - [Google Fit](https://github.com/owenvoke/laravel-dashboard-google-fit-tile): display statistics from Google Fit
+- [Google Realtime Analytics](https://github.com/ingoldsby/laravel-dashboard-google-analytics-realtime-tile): display realtime stats from Google Analytics
 - [Health Check](https://github.com/tylerwoonton/laravel-dashboard-health-check-tile): display health of your applications using the [Laravel Health Check](https://github.com/ukfast/laravel-health-check) package
 - [npm downloads](https://github.com/skydiver/laravel-dashboard-npm): Show npm packages stats
 - [Offset Earth](https://github.com/owenvoke/laravel-dashboard-offset-earth-tile): display statistics from Offset Earth
