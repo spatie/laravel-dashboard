@@ -13,5 +13,5 @@ You can use any of the [pre-packaged tiles](/laravel-dashboard/v1/adding-tiles/o
 
 ## Are you a visual learner?
 
-[In this video](https://spatie.be/videos/spatie-package-source-dives/laravel-dashboard), you'll get a walkthrough of how you can set up your dashboard. It also shows you how the dashboard works under the hood.
+[In this video](https://spatie.be/videos/laravel-package-training/laravel-dashboard), you'll get a walkthrough of how you can set up your dashboard. It also shows you how the dashboard works under the hood.
 
