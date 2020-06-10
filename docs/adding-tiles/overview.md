@@ -32,6 +32,7 @@ Here are tiles created by the community:
 - [Pi-hole](https://github.com/owenvoke/laravel-dashboard-pihole-tile): display statistics from Pi-hole
 - [PingPing](https://github.com/Astrotomic/laravel-dashboard-pingping-tile): display sites monitored by [PingPing](https://pingping.io)
 - [Reddit](https://github.com/jeop10/laravel-dashboard-reddit-tile): display a list of the posts of a subreddit
+- [Shopify](https://github.com/ingoldsby/laravel-dashboard-shopify-tile): display statistics from Shopify
 - [Spotify](https://github.com/ashbakernz/laravel-dashboard-spotify-tile): displays music that you are playing on Spotify 
 - [Stocks Yahoo Finance](https://github.com/vitorhugoro1/laravel-dashboard-stocks-tile): display stocks price from Yahoo Finance
 - [TMB](https://github.com/dustycodecorp/laravel-dashboard-tmb-tile): display the bus status for a given bus stop of Barcelona
