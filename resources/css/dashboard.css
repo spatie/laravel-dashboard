@@ -9,6 +9,7 @@
     --color-tile: rgb(255, 255, 255);
     --color-warning: rgb(255, 172, 51);
     --color-error: rgb(234, 15, 65);
+    --color-success: rgb(72, 187, 120);
 }
 
 .dark-mode {
@@ -20,6 +21,7 @@
     --color-tile: rgb(39, 39, 39);
     --color-warning: rgb(143, 86, 0);
     --color-error: rgb(234, 89, 114);
+    --color-success: rgb(47, 133, 90);
 }
 
 html {

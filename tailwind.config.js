@@ -23,6 +23,7 @@ module.exports = {
                 tile: "var(--color-tile)",
                 warning: "var(--color-warning)",
                 error: "var(--color-error)",
+                success: "var(--color-success)",
             },
             borderColor: (theme) => ({
                 default: theme("colors.canvas", "currentColor"),
