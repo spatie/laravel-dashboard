@@ -118,7 +118,7 @@ If your component only needs to be refreshed partials, you can add `wire:poll` t
 
 The dashboard is styled using [Tailwind](https://tailwindcss.com). In your component you can use any of the classes Tailwind provides.
 
-In addition to Tailwind, the dashboard defines these extra colors for you to use: `default`, `invers`, `dimmed`, `accent`, `canvas`, `tile`, `warning`, `error`. 
+In addition to Tailwind, the dashboard defines these extra colors for you to use: `default`, `invers`, `dimmed`, `accent`, `canvas`, `tile`, `success`, `warning`, `error`. 
 
 By default, these colors are automatically shared by the `textColor`, `borderColor`, and `backgroundColor` utilities, so you can use utility classes like `text-canvas`, `border-error`, and `bg-dimmed`.
 
