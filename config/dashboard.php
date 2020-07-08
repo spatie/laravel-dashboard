@@ -19,4 +19,18 @@ return [
         'lat' => 51.260197,
         'lng' => 4.402771,
     ],
+
+    /**
+     * External script libraries
+     */
+    'scripts' => [
+        'alpinejs' => 'https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js',
+    ],
+
+    /**
+     * External css libraries
+     */
+    'stylesheets' => [
+        'inter' => 'https://rsms.me/inter/inter.css'
+    ],
 ];
