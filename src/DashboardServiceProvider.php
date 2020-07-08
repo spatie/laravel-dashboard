@@ -15,8 +15,8 @@ class DashboardServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->make(Dashboard::class)
-            ->script('https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js')
-            ->stylesheet('https://rsms.me/inter/inter.css')
+            ->script(config('dashboard.scripts.alpinejs'))
+            ->stylesheet(config('dashboard.stylesheets.inter'))
             ->inlineStylesheet(file_get_contents(__DIR__.'/../resources/dist/dashboard.min.css'));
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard');
