@@ -38,6 +38,7 @@ Here are tiles created by the community:
 - [TMB](https://github.com/dustycodecorp/laravel-dashboard-tmb-tile): display the bus status for a given bus stop of Barcelona
 - [Uptime Robot](https://github.com/VineVax/laravel-dashboard-uptime-robot-tile): display sites monitored by Uptime Robot
 - [Vapor Metrics](https://github.com/fidum/laravel-dashboard-vapor-metrics-tile): display metrics for your [Laravel Vapor](https://vapor.laravel.com) projects!
+- [Youless](https://github.com/Xibel/laravel-dashboard-youless-tile): display energy metrics from your Youless LS120 energy monitor
 
 
 If you have created a tile package, let us know! Send a mail to info@spatie.be, and we'll add your tile to the list above.
