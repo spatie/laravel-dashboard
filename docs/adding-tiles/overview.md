@@ -37,6 +37,7 @@ Here are tiles created by the community:
 - [Stocks Yahoo Finance](https://github.com/vitorhugoro1/laravel-dashboard-stocks-tile): display stocks price from Yahoo Finance
 - [Stockholm public transport](https://github.com/robbens/laravel-dashboard-sl): displays real time info on busses and trains in Stockholm, Sweden
 - [TMB](https://github.com/dustycodecorp/laravel-dashboard-tmb-tile): display the bus status for a given bus stop of Barcelona
+- [Upsales](https://github.com/robbens/laravel-dashboard-upsales): display latest and total sales for Upsales CRM
 - [Uptime Robot](https://github.com/VineVax/laravel-dashboard-uptime-robot-tile): display sites monitored by Uptime Robot
 - [Vapor Metrics](https://github.com/fidum/laravel-dashboard-vapor-metrics-tile): display metrics for your [Laravel Vapor](https://vapor.laravel.com) projects!
 - [Youless](https://github.com/Xibel/laravel-dashboard-youless-tile): display energy metrics from your Youless LS120 energy monitor
