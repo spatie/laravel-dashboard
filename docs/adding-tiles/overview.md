@@ -30,6 +30,9 @@ Here are tiles created by the community:
 - [npm downloads](https://github.com/skydiver/laravel-dashboard-npm): Show npm packages stats
 - [Offset Earth](https://github.com/owenvoke/laravel-dashboard-offset-earth-tile): display statistics from Offset Earth
 - [Packagist data](https://packagist.org/packages/tjvb/laravel-dashboard-packagist-tile): Display statistics from Packagist (downloads, favers, github stars) or the packages you want to folow.
+- [Paystack - Customers](https://github.com/digikraaft/laravel-dashboard-paystack-customers-tile): show recent Paystack customers
+- [Paystack - Subscriptions](https://github.com/digikraaft/laravel-dashboard-paystack-subscriptions-tile): show recent Paystack subscriptions)
+- [Paystack - Transactions](https://github.com/digikraaft/laravel-dashboard-paystack-transactions-tile): Display recent transactions from Stripe
 - [Pi-hole](https://github.com/owenvoke/laravel-dashboard-pihole-tile): display statistics from Pi-hole
 - [PingPing](https://github.com/Astrotomic/laravel-dashboard-pingping-tile): display sites monitored by [PingPing](https://pingping.io)
 - [Reddit](https://github.com/jeop10/laravel-dashboard-reddit-tile): display a list of the posts of a subreddit
@@ -37,6 +40,9 @@ Here are tiles created by the community:
 - [Spotify](https://github.com/ashbakernz/laravel-dashboard-spotify-tile): displays music that you are playing on Spotify 
 - [Stocks Yahoo Finance](https://github.com/vitorhugoro1/laravel-dashboard-stocks-tile): display stocks price from Yahoo Finance
 - [Stockholm public transport](https://github.com/robbens/laravel-dashboard-sl): displays real time info on busses and trains in Stockholm, Sweden
+- [Stripe - Customers](https://github.com/digikraaft/laravel-dashboard-stripe-customers-tile): show recent Stripe customers
+- [Stripe - Balances](https://github.com/digikraaft/laravel-dashboard-stripe-balances-tile): show your stripe balance(s)
+- [Stripe - Payments](https://github.com/digikraaft/laravel-dashboard-stripe-payments-tile): Display recent charges(received) from Stripe
 - [TMB](https://github.com/dustycodecorp/laravel-dashboard-tmb-tile): display the bus status for a given bus stop of Barcelona
 - [Upsales](https://github.com/robbens/laravel-dashboard-upsales): display latest and total sales for Upsales CRM
 - [Uptime Robot](https://github.com/VineVax/laravel-dashboard-uptime-robot-tile): display sites monitored by Uptime Robot
