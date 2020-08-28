@@ -33,7 +33,7 @@ class DummyComponent extends Component
 }
 ```
 
-You should always accept a `position` via the mount function. This position will used [to position tiles on the dashboard](/laravel-dashboard/v1/basic-usage/positioning-tiles).
+You should always accept a `position` via the mount function. This position will used [to position tiles on the dashboard](/docs/laravel-dashboard/v1/basic-usage/positioning-tiles).
 
 Here's how that `tiles.dummy` view could look like
 
