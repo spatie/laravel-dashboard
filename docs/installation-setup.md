@@ -47,7 +47,7 @@ return [
 ];
 ```
 
-In order for the dashboard to run constantly without anybody having to refresh it every once in a while, you need to add an exception for Livewire routes in you `VerifyCsrfToken` middleware:
+In order for the dashboard to run constantly without anybody having to refresh it every once in a while, you need to add an exception for Livewire routes in your `VerifyCsrfToken` middleware:
 
 ```php
 protected $except = [
