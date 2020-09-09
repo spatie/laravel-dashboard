@@ -5,7 +5,7 @@ weight: 7
 
 This tile displays the status of [Velo](https://www.velo-antwerpen.be/en), the Antwerp bike sharing system.
 
-<img src="https://spatie.be/docs/laravel-dashboard/v2/images/velo.png" width=300" />
+![screenshot](https://spatie.be/docs/laravel-dashboard/v2/images/velo.png")
 
 ## Installation
 
