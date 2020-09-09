@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 1.3.1 - 2020-09-09
+
+- add support for Laravel 8
+
 ## 1.3.0 - 2020-07-09
 
 - allow to override the external dependencies (#41)
