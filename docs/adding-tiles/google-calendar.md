@@ -5,7 +5,7 @@ weight: 3
 
 This tile displays events on a Google calendar.
 
-<img src="https://docs.spatie.be/laravel-dashboard/v1/images/calendar.png" width=300" />
+<img src="https://spatie.be/docs/laravel-dashboard/v2/images/calendar.png" width=300" />
 
 ## Installation
 

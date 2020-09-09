@@ -25,7 +25,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 
 ## Documentation
 
-All documentation is available [on our documentation site](https://docs.spatie.be/laravel-dashboard).
+All documentation is available [on our documentation site](https://spatie.be/docs/laravel-dashboard).
 
 ## Testing
 

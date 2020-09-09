@@ -5,7 +5,7 @@ weight: 3
 
 This tile displays the time, weather, and optionally a rain forecast.
 
-<img src="https://docs.spatie.be/laravel-dashboard/v1/images/time-weather.png" width=300" />
+<img src="https://spatie.be/docs/laravel-dashboard/v2/images/time-weather.png" width=300" />
 
 ## Installation
 
