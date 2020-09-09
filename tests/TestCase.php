@@ -4,8 +4,6 @@ namespace Spatie\Dashboard\Tests;
 
 use CreateDashboardTilesTable;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\View;
-use Illuminate\Support\Str;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\Dashboard\DashboardServiceProvider;
@@ -35,6 +33,7 @@ abstract class TestCase extends Orchestra
         (new CreateDashboardTilesTable())->up();
     }
 
+    /*
     protected function renderBladeString(string $bladeContent): string
     {
         $temporaryDirectory = sys_get_temp_dir();
@@ -51,4 +50,5 @@ abstract class TestCase extends Orchestra
 
         return view($bladeViewName)->render();
     }
+    */
 }
