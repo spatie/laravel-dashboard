@@ -18,7 +18,7 @@
     "require": {
         "php": "^7.4",
         "illuminate/database": "^7.5|^8.0",
-        "illuminate/view": "^7.5",
+        "illuminate/view": "^7.5|^8.0",
         "livewire/livewire": "^1.0.13",
         "spatie/sun": "^1.0"
     },
