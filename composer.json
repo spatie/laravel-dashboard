@@ -17,14 +17,14 @@
     ],
     "require": {
         "php": "^7.4",
-        "illuminate/database": "^7.5",
+        "illuminate/database": "^7.5|^8.0",
         "illuminate/view": "^7.5",
         "livewire/livewire": "^1.0.13",
         "spatie/sun": "^1.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "orchestra/testbench": "^5.0",
+        "orchestra/testbench": "^5.0|^6.0",
         "phpunit/phpunit": "^9.0",
         "spatie/phpunit-snapshot-assertions": "^4.1"
     },
