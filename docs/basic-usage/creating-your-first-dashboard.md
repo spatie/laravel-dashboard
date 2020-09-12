@@ -6,7 +6,7 @@ weight: 2
 In your Laravel app, create a new route and view. The url and view name can be whatever you want.
 
 ```php
-Route::view('dashboard-url', 'dashboard-blade-view')
+Route::view('dashboard-url', 'dashboard-blade-view');
 ```
 
 In your Blade view, use the `dashboard` Blade view component.
