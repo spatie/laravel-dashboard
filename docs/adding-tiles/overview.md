@@ -37,6 +37,7 @@ Here are tiles created by the community:
 - [PingPing](https://github.com/Astrotomic/laravel-dashboard-pingping-tile): display sites monitored by [PingPing](https://pingping.io)
 - [Reddit](https://github.com/jeop10/laravel-dashboard-reddit-tile): display a list of the posts of a subreddit
 - [Shopify](https://github.com/ingoldsby/laravel-dashboard-shopify-tile): display statistics from Shopify
+- [Soundtrack](https://github.com/solitweb/laravel-dashboard-soundtrack-tile): displays music that is playing via [Soundtrack Your Brand](https://www.soundtrackyourbrand.com/)
 - [Spotify](https://github.com/ashbakernz/laravel-dashboard-spotify-tile): displays music that you are playing on Spotify 
 - [Stocks Yahoo Finance](https://github.com/vitorhugoro1/laravel-dashboard-stocks-tile): display stocks price from Yahoo Finance
 - [Stockholm public transport](https://github.com/robbens/laravel-dashboard-sl): displays real time info on busses and trains in Stockholm, Sweden
