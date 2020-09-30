@@ -50,6 +50,7 @@ Here are tiles created by the community:
 - [Upsales](https://github.com/robbens/laravel-dashboard-upsales): display latest and total sales for Upsales CRM
 - [Uptime Robot](https://github.com/VineVax/laravel-dashboard-uptime-robot-tile): display sites monitored by Uptime Robot
 - [Vapor Metrics](https://github.com/fidum/laravel-dashboard-vapor-metrics-tile): display metrics for your [Laravel Vapor](https://vapor.laravel.com) projects!
+- [Weather forecast](https://github.com/solitweb/laravel-dashboard-weather-forecast-tile): displays a weather forecast
 - [Youless](https://github.com/Xibel/laravel-dashboard-youless-tile): display energy metrics from your Youless LS120 energy monitor
 
 
