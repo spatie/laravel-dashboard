@@ -20,6 +20,7 @@ Here are tiles created by the community:
 - [Charts](https://github.com/fidum/laravel-dashboard-chart-tile): display any chart you want (supports line, bar, pie, doughnut and many more)
 - [Citybikes](https://github.com/Astrotomic/laravel-dashboard-citybikes-tile): display the status of [Citybikes](https://citybik.es) an API for bike services all over the world
 - [Cloudflare stats](https://github.com/owenvoke/laravel-dashboard-cloudflare-stats-tile): display statistics from Cloudflare
+- [Date & time](https://github.com/solitweb/laravel-dashboard-date-time-tile): displays date & time for a specified timezone
 - [Dev.to stats](https://github.com/Hi-Folks/laravel-dashboard-devto-tile): display views and reactions for your posts at dev.to
 - [Football standings](https://github.com/kayschima/laravel-dashboard-footballdata-standings-tile): display football standings (powered by [football-data.org](https://football-data.org))
 - [Forge](https://github.com/aglipanci/laravel-dashboard-forge-tile): display information from [Laravel Forge](https://forge.laravel.com)
@@ -49,6 +50,7 @@ Here are tiles created by the community:
 - [Upsales](https://github.com/robbens/laravel-dashboard-upsales): display latest and total sales for Upsales CRM
 - [Uptime Robot](https://github.com/VineVax/laravel-dashboard-uptime-robot-tile): display sites monitored by Uptime Robot
 - [Vapor Metrics](https://github.com/fidum/laravel-dashboard-vapor-metrics-tile): display metrics for your [Laravel Vapor](https://vapor.laravel.com) projects!
+- [Weather forecast](https://github.com/solitweb/laravel-dashboard-weather-forecast-tile): displays a weather forecast
 - [Youless](https://github.com/Xibel/laravel-dashboard-youless-tile): display energy metrics from your Youless LS120 energy monitor
 
 
