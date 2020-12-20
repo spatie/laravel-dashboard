@@ -47,6 +47,7 @@ Here are tiles created by the community:
 - [Stripe - Balances](https://github.com/digikraaft/laravel-dashboard-stripe-balances-tile): show your stripe balance(s)
 - [Stripe - Payments](https://github.com/digikraaft/laravel-dashboard-stripe-payments-tile): Display recent charges(received) from Stripe
 - [TMB](https://github.com/dustycodecorp/laravel-dashboard-tmb-tile): display the bus status for a given bus stop of Barcelona
+- [Trello](https://github.com/tkaratug/laravel-dashboard-trello-tile): display tasks from Trello
 - [Upsales](https://github.com/robbens/laravel-dashboard-upsales): display latest and total sales for Upsales CRM
 - [Uptime Robot](https://github.com/VineVax/laravel-dashboard-uptime-robot-tile): display sites monitored by Uptime Robot
 - [Vapor Metrics](https://github.com/fidum/laravel-dashboard-vapor-metrics-tile): display metrics for your [Laravel Vapor](https://vapor.laravel.com) projects!
