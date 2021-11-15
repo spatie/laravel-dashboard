@@ -29,6 +29,7 @@ Here are tiles created by the community:
 - [Health Check](https://github.com/tylerwoonton/laravel-dashboard-health-check-tile): display health of your applications using the [Laravel Health Check](https://github.com/ukfast/laravel-health-check) package
 - [Helpscout](https://github.com/creacoon/laravel-dashboard-helpscout-tile): clear overview of open, pending and today's solved Helpscout tickets.
 - [Honeybadger](https://github.com/DevLabor/laravel-dashboard-honeybadger-tile): Display unresolved Honeybadger faults count
+- [Laravel news](https://github.com/dietercoopman/laravel-dashboard-laravelnews-tile): Display the latest Laravel news articles in a loop.
 - [npm downloads](https://github.com/skydiver/laravel-dashboard-npm): Show npm packages stats
 - [Offset Earth](https://github.com/owenvoke/laravel-dashboard-offset-earth-tile): display statistics from Offset Earth
 - [Packagist data](https://packagist.org/packages/tjvb/laravel-dashboard-packagist-tile): Display statistics from Packagist (downloads, favers, github stars) or the packages you want to folow.
