@@ -14,10 +14,17 @@ class DashboardServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->app->make(Dashboard::class)
-            ->script(config('dashboard.scripts.alpinejs'))
-            ->stylesheet(config('dashboard.stylesheets.inter'))
-            ->inlineStylesheet(file_get_contents(__DIR__.'/../resources/dist/dashboard.min.css'));
+        $dashboard = $this->app->make(Dashboard::class);
+
+        if ($alpine = config('dashboard.scripts.alpinejs')) {
+            $dashboard->script($alpine);
+        }
+
+        if ($inter = config('dashboard.stylesheets.inter')) {
+            $dashboard->stylesheet($inter);
+        }
+
+        $dashboard->inlineStylesheet(file_get_contents(__DIR__.'/../resources/dist/dashboard.min.css'));
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard');
 
