@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 2.1.1 - 2022-04-07
+
+## What's Changed
+
+- Ability to not load external dependencies by @billmn in https://github.com/spatie/laravel-dashboard/pull/90
+
+## New Contributors
+
+- @billmn made their first contribution in https://github.com/spatie/laravel-dashboard/pull/90
+
+**Full Changelog**: https://github.com/spatie/laravel-dashboard/compare/2.1.0...2.1.1
+
 ## 2.1.0 - 2022-02-08
 
 ## What's Changed
