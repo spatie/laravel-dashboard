@@ -2,6 +2,19 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 2.1.2 - 2022-05-19
+
+## What's Changed
+
+- Fix link to video (v2 docs) by @felixfrey in https://github.com/spatie/laravel-dashboard/pull/92
+- Update tile.blade.php by @aymanatmeh in https://github.com/spatie/laravel-dashboard/pull/88
+
+## New Contributors
+
+- @aymanatmeh made their first contribution in https://github.com/spatie/laravel-dashboard/pull/88
+
+**Full Changelog**: https://github.com/spatie/laravel-dashboard/compare/2.1.1...2.1.2
+
 ## 2.1.1 - 2022-04-07
 
 ## What's Changed
