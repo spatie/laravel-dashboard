@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 2.1.3 - 2022-05-23
+
+## What's Changed
+
+- Fix attribute class by @mbardelmeijer in https://github.com/spatie/laravel-dashboard/pull/93
+
+## New Contributors
+
+- @mbardelmeijer made their first contribution in https://github.com/spatie/laravel-dashboard/pull/93
+
+**Full Changelog**: https://github.com/spatie/laravel-dashboard/compare/2.1.2...2.1.3
+
 ## 2.1.2 - 2022-05-19
 
 ## What's Changed
