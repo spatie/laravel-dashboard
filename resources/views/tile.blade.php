@@ -1,7 +1,7 @@
 <div
     style="grid-area: {{ $gridArea }};{{ $show ? '' : 'display:none' }}"
      {{ $attributes->merge([
-        'class'=>'overflow-hidden rounded relative bg-tile"'
+        'class'=>'overflow-hidden rounded relative bg-tile'
         ])}}
     {{ $refreshIntervalInSeconds ? "wire:poll.{$refreshIntervalInSeconds}s" : ''  }}
 >
