@@ -55,6 +55,6 @@ Here are tiles created by the community:
 - [Vapor Metrics](https://github.com/fidum/laravel-dashboard-vapor-metrics-tile): display metrics for your [Laravel Vapor](https://vapor.laravel.com) projects!
 - [Weather forecast](https://github.com/solitweb/laravel-dashboard-weather-forecast-tile): displays a weather forecast
 - [Youless](https://github.com/Xibel/laravel-dashboard-youless-tile): display energy metrics from your Youless LS120 energy monitor
-
+- [Exchange rates](https://github.com/VictorAvelar/laravel-dashboard-exchange-rates-tile): display exchange rates and crypto assets
 
 If you have created a tile package, let us know! Send a mail to info@spatie.be, and we'll add your tile to the list above.
