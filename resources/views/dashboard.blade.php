@@ -67,6 +67,10 @@
                     })
                 },
             });
+
+            Livewire.onPageExpired(() => {
+                window.location.reload();
+            });
         </script>
 
 
