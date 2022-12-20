@@ -47,11 +47,3 @@ return [
 ];
 ```
 
-In order for the dashboard to run constantly without anybody having to refresh it every once in a while, you need to add an exception for Livewire routes in your `VerifyCsrfToken` middleware (/app/Http/Middleware/VerifyCsrfToken.php):
-
-```php
-protected $except = [
-    '/livewire/*',
-];
-```
-Livewire uses AJAX requests to update the components. Those AJAX requests contain a [CSRF token](https://laravel.com/docs/7.x/csrf#csrf-x-csrf-token), and at some point that token will expire and you will see a `419 Page Expired` error in your dashboard. This will prevent it from happening.
