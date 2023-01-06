@@ -11,6 +11,11 @@ return [
      */
     'theme' => 'light',
 
+    /**
+     * The dashboard title
+     */
+    'title' => 'Dashboard',
+
     /*
      * When the dashboard uses the `auto` theme, these coordinates will be used
      * to determine whether the sun is up or down.

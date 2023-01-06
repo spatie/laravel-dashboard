@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Dashboard</title>
+        <title>{{ config('dashboard.title') }}</title>
         <meta name="google" value="notranslate">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,7 +19,7 @@
             x-init="init"
             :class="mode === 'dark' ? 'dark-mode' : ''"
         >
-            <div class="fixed inset-0 w-screen h-screen grid gap-2 p-2 bg-canvas text-default">
+            <div class="fixed inset-0 grid w-screen h-screen gap-2 p-2 bg-canvas text-default">
                 <livewire:dashboard-update-mode />
 
                 {{ $slot }}
@@ -72,7 +72,6 @@
                 window.location.reload();
             });
         </script>
-
 
     </body>
 </html>

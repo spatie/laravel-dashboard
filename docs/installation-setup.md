@@ -36,13 +36,32 @@ return [
      */
     'theme' => 'light',
 
+    /**
+     * The dashboard title
+     */
+    'title' => 'Dashboard',
+
     /*
      * When the dashboard uses the `auto` theme, these coordinates will be used
-     * to determine whether the sun is up or down
+     * to determine whether the sun is up or down.
      */
     'auto_theme_location' => [
         'lat' => 51.260197,
         'lng' => 4.402771,
+    ],
+
+    /*
+     * These scripts will be loaded when the dashboard is displayed.
+     */
+    'scripts' => [
+        'alpinejs' => 'https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js',
+    ],
+
+    /*
+     * These stylesheets will be loaded when the dashboard is displayed.
+     */
+    'stylesheets' => [
+        'inter' => 'https://rsms.me/inter/inter.css'
     ],
 ];
 ```
