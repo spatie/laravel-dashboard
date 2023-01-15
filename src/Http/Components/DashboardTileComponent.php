@@ -57,9 +57,9 @@ class DashboardTileComponent extends Component
             return $areaFrom;
         }
 
-        $toStart = ((int)substr($to, 1)) + 1;
+        $toStart = ((int) substr($to, 1)) + 1;
 
-        $toEnd = ((int)$this->indexInAlphabet($to[0])) + 1;
+        $toEnd = ((int) $this->indexInAlphabet($to[0])) + 1;
 
         return "{$areaFrom} / {$toStart} / {$toEnd}";
     }

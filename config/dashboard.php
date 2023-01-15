@@ -31,6 +31,6 @@ return [
      * These stylesheets will be loaded when the dashboard is displayed.
      */
     'stylesheets' => [
-        'inter' => 'https://rsms.me/inter/inter.css'
+        'inter' => 'https://rsms.me/inter/inter.css',
     ],
 ];

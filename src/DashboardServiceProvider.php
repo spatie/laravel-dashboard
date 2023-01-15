@@ -26,7 +26,7 @@ class DashboardServiceProvider extends ServiceProvider
 
         $dashboard->inlineStylesheet(file_get_contents(__DIR__.'/../resources/dist/dashboard.min.css'));
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'dashboard');
 
         $this
             ->registerPublishables()
@@ -57,16 +57,16 @@ class DashboardServiceProvider extends ServiceProvider
     {
         if (! class_exists('CreateDashboardTilesTable')) {
             $this->publishes([
-                __DIR__ . '/../database/migrations/create_dashboard_tiles_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_dashboard_tiles_table.php'),
+                __DIR__.'/../database/migrations/create_dashboard_tiles_table.php.stub' => database_path('migrations/'.date('Y_m_d_His', time()).'_create_dashboard_tiles_table.php'),
             ], 'dashboard-migrations');
         }
 
         $this->publishes([
-            __DIR__ . '/../config/dashboard.php' => config_path('dashboard.php'),
+            __DIR__.'/../config/dashboard.php' => config_path('dashboard.php'),
         ], 'dashboard-config');
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/dashboard'),
         ], 'dashboard-views');
 
         return $this;
