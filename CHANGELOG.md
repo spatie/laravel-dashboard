@@ -2,6 +2,26 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 2.1.4 - 2023-02-02
+
+### What's Changed
+
+- Update overview.md by @WouterBrouwers in https://github.com/spatie/laravel-dashboard/pull/100
+- Add livewire hook to refresh page on 419 error. by @dbohn in https://github.com/spatie/laravel-dashboard/pull/105
+- Fix Tests Shield Badge by @faissaloux in https://github.com/spatie/laravel-dashboard/pull/107
+- Replace php_cs with Pint by @faissaloux in https://github.com/spatie/laravel-dashboard/pull/109
+- Fix Pint workflow by @faissaloux in https://github.com/spatie/laravel-dashboard/pull/110
+- Laravel 10.x Compatibility by @laravel-shift in https://github.com/spatie/laravel-dashboard/pull/111
+
+### New Contributors
+
+- @WouterBrouwers made their first contribution in https://github.com/spatie/laravel-dashboard/pull/100
+- @dbohn made their first contribution in https://github.com/spatie/laravel-dashboard/pull/105
+- @faissaloux made their first contribution in https://github.com/spatie/laravel-dashboard/pull/107
+- @laravel-shift made their first contribution in https://github.com/spatie/laravel-dashboard/pull/111
+
+**Full Changelog**: https://github.com/spatie/laravel-dashboard/compare/2.1.3...2.1.4
+
 ## 2.1.3 - 2022-05-23
 
 ## What's Changed
