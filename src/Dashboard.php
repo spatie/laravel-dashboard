@@ -54,7 +54,7 @@ class Dashboard
         }
 
         foreach ($this->inlineScripts as $inlineScript) {
-            $assets[] = "<script>{ $inlineScript }</script>";
+            $assets[] = "<script>$inlineScript</script>";
         }
 
         foreach ($this->stylesheets as $stylesheet) {
