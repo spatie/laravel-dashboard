@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Dashboard\Http\Components;
+namespace Spatie\Dashboard\Components;
 
 use Illuminate\View\Component;
 
