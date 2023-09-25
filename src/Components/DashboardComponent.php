@@ -8,13 +8,13 @@ use Spatie\Dashboard\Dashboard;
 
 class DashboardComponent extends Component
 {
-    public string $theme;
+    public string $theme = '';
 
-    public string $initialMode;
+    public string $initialMode = '';
 
-    public HtmlString $assets;
+    public ?HtmlString $assets  = null;
 
-    public function __construct(Dashboard $dashboard)
+    public function mount(Dashboard $dashboard)
     {
         $this->theme = $dashboard->getTheme();
 

@@ -12,7 +12,7 @@ class UpdateModeComponent extends Component
         /** @var \Spatie\Dashboard\Dashboard $dashboard */
         $dashboard = app(Dashboard::class);
 
-        $this->dispatch('updateMode')->to($dashboard->getMode());
+        $this->dispatch('updateMode', $dashboard->getMode());
 
         return view('dashboard::components.updateMode');
     }
