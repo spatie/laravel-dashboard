@@ -58,11 +58,11 @@ class Dashboard
         }
 
         foreach ($this->stylesheets as $stylesheet) {
-            $assets[] = "<link rel=\"stylesheet\" href=\"{$stylesheet}\">";
+            $assets[] = "<link rel=\"stylesheet\" href=\"$stylesheet\">";
         }
 
         foreach ($this->inlineStylesheets as $inlineStylesheet) {
-            $assets[] = "<style>{$inlineStylesheet}</style>";
+            $assets[] = "<style>$inlineStylesheet</style>";
         }
 
         return new HtmlString(implode('', $assets));
