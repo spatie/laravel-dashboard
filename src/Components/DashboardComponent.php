@@ -12,7 +12,7 @@ class DashboardComponent extends Component
 
     public string $initialMode = '';
 
-    public ?HtmlString $assets  = null;
+    public ?HtmlString $assets = null;
 
     public function mount(Dashboard $dashboard)
     {
