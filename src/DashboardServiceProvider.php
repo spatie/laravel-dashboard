@@ -5,9 +5,9 @@ namespace Spatie\Dashboard;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use Spatie\Dashboard\Http\Components\DashboardComponent;
-use Spatie\Dashboard\Http\Components\DashboardTileComponent;
-use Spatie\Dashboard\Http\Components\UpdateModeComponent;
+use Spatie\Dashboard\Components\DashboardComponent;
+use Spatie\Dashboard\Components\DashboardTileComponent;
+use Spatie\Dashboard\Components\UpdateModeComponent;
 use Spatie\Sun\Sun;
 
 class DashboardServiceProvider extends ServiceProvider
