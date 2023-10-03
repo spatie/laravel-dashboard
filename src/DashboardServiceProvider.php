@@ -16,10 +16,6 @@ class DashboardServiceProvider extends ServiceProvider
     {
         $dashboard = $this->app->make(Dashboard::class);
 
-        if ($alpine = config('dashboard.scripts.alpinejs')) {
-            $dashboard->script($alpine);
-        }
-
         if ($inter = config('dashboard.stylesheets.inter')) {
             $dashboard->stylesheet($inter);
         }
