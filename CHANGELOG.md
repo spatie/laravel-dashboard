@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 3.0.0 - 2023-10-03
+
+- support for Livewire 3
+
 ## 2.1.4 - 2023-02-02
 
 ### What's Changed
