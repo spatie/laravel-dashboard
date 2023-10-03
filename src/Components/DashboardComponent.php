@@ -14,7 +14,7 @@ class DashboardComponent extends Component
 
     public ?HtmlString $assets = null;
 
-    public function mount(Dashboard $dashboard)
+    public function __construct(Dashboard $dashboard)
     {
         $this->theme = $dashboard->getTheme();
 
