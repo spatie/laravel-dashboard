@@ -1,85 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Dashboard</title>
-        <meta name="google" value="notranslate">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<head>
+    <title>Dashboard</title>
+    <meta name="google" value="notranslate">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-        {{ $assets }}
+    {{ $assets }}
 
-        @stack('assets')
+    @stack('assets')
+</head>
+<body class="leading-snug">
+<div
+    x-data="theme('{{ $theme }}', '{{ $initialMode }}')"
+    x-init="init"
+    :class="mode === 'dark' ? 'dark-mode' : ''"
+>
+    <div class="fixed inset-0 w-screen h-screen grid gap-2 p-2 bg-canvas text-default">
+        <livewire:dashboard-update-mode/>
 
-        <livewire:styles />
-    </head>
-    <body class="leading-snug">
-        <div
-            x-data="theme('{{ $theme }}', '{{ $initialMode }}')"
-            x-init="init"
-            :class="mode === 'dark' ? 'dark-mode' : ''"
-        >
-            <div class="fixed inset-0 w-screen h-screen grid gap-2 p-2 bg-canvas text-default">
-                <livewire:dashboard-update-mode />
+        {{ $slot }}
+    </div>
+</div>
 
-                {{ $slot }}
-            </div>
-        </div>
+@stack('scripts')
 
-        <livewire:scripts />
+<script>
+    const theme = (theme, initialMode) => ({
+        theme,
+        mode: initialMode,
 
-        @stack('scripts')
+        init() {
+            if (this.theme === 'device') {
+                this.detectDeviceColorScheme();
 
-        <script>
-            const theme = (theme, initialMode) => ({
-                theme,
-                mode: initialMode,
+                return;
+            }
 
-                init() {
-                    if (this.theme === 'device') {
-                        this.detectDeviceColorScheme();
+            if (this.theme === 'auto') {
+                this.listenForUpdateModeEvent();
 
-                        return;
-                    }
+                return;
+            }
+        },
 
-                    if (this.theme === 'auto') {
-                        this.listenForUpdateModeEvent();
+        detectDeviceColorScheme() {
+            const mediaQuery = matchMedia("(prefers-color-scheme: dark)");
 
-                        return;
-                    }
-                },
+            this.mode = mediaQuery.matches ? 'dark' : 'light';
 
-                detectDeviceColorScheme() {
-                    const mediaQuery = matchMedia("(prefers-color-scheme: dark)");
-
-                    this.mode = mediaQuery.matches ? 'dark' : 'light';
-
-                    mediaQuery.addListener((event) => {
-                        this.mode = mediaQuery.matches ? 'dark' : 'light';
-                    });
-                },
-
-                listenForUpdateModeEvent() {
-                    window.Livewire.on('updateMode', newMode => {
-                        if (newMode !== this.mode) {
-                            this.mode = newMode;
-                        }
-                    })
-                },
+            mediaQuery.addListener((event) => {
+                this.mode = mediaQuery.matches ? 'dark' : 'light';
             });
+        },
 
-            Livewire.hook('request', ({ fail }) => {
-                fail(({ status, preventDefault }) => {
-                    if (status === 419) {
-                        preventDefault()
-
-                    }
-                })
-
-                window.location.reload();
+        listenForUpdateModeEvent() {
+            window.Livewire.on('updateMode', newMode => {
+                if (newMode !== this.mode) {
+                    this.mode = newMode;
+                }
             })
-        </script>
+        },
+    });
+</script>
 
 
-    </body>
+</body>
 </html>
