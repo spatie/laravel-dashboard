@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 3.0.2 - 2023-10-09
+
+- Reload page on session expiration
+
+**Full Changelog**: https://github.com/spatie/laravel-dashboard/compare/3.0.1...3.0.2
+
 ## 3.0.1 - 2023-10-03
 
 - Fix for Livewire 3
