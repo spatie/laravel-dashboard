@@ -2,6 +2,19 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 3.1.0 - 2024-03-02
+
+### What's Changed
+
+* Update upgrading.md by @remievraere in https://github.com/spatie/laravel-dashboard/pull/114
+* Laravel 11.x Compatibility by @laravel-shift in https://github.com/spatie/laravel-dashboard/pull/115
+
+### New Contributors
+
+* @remievraere made their first contribution in https://github.com/spatie/laravel-dashboard/pull/114
+
+**Full Changelog**: https://github.com/spatie/laravel-dashboard/compare/3.0.2...3.1.0
+
 ## 3.0.2 - 2023-10-09
 
 - Reload page on session expiration
