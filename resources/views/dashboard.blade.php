@@ -1,11 +1,25 @@
+@if (config('dashboard.single_page'))
+    <!DOCTYPE html>
+    <html lang="en">
 
-<div
-    x-data="theme('{{ $theme }}', '{{ $initialMode }}')"
-    x-init="init"
-    :class="mode === 'dark' ? 'dark-mode' : ''"
->
+    <head>
+        <title>Dashboard</title>
+        <meta name="google" value="notranslate">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        {{ $assets }}
+
+        @stack('assets')
+    </head>
+
+    <body class="leading-snug">
+@endif
+
+<div x-data="theme('{{ $theme }}', '{{ $initialMode }}')" x-init="init" :class="mode === 'dark' ? 'dark-mode' : ''">
     <div class="fixed inset-0 w-screen h-screen grid gap-2 p-2 bg-canvas text-default">
-        <livewire:dashboard-update-mode/>
+        <livewire:dashboard-update-mode />
 
         {{ $slot }}
     </div>
@@ -52,8 +66,13 @@
     });
 
     document.addEventListener('livewire:init', () => {
-        Livewire.hook('request', ({ fail }) => {
-            fail(({ status, preventDefault }) => {
+        Livewire.hook('request', ({
+            fail
+        }) => {
+            fail(({
+                status,
+                preventDefault
+            }) => {
                 if (status === 419) {
                     preventDefault();
 
@@ -63,4 +82,8 @@
         });
     });
 </script>
+@if (config('dashboard.single_page'))
+    </body>
 
+    </html>
+@endif

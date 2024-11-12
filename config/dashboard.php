@@ -26,4 +26,9 @@ return [
     'stylesheets' => [
         'inter' => 'https://rsms.me/inter/inter.css',
     ],
+
+    /**
+     *  A flag to tell if the dashboard is a single page or not.
+     */
+    'single_page' => false,
 ];
