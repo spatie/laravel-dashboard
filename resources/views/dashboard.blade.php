@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Dashboard</title>
-    <meta name="google" value="notranslate">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    {{ $assets }}
-
-    @stack('assets')
-</head>
-<body class="leading-snug">
 <div
     x-data="theme('{{ $theme }}', '{{ $initialMode }}')"
     x-init="init"
@@ -77,6 +64,3 @@
     });
 </script>
 
-
-</body>
-</html>
