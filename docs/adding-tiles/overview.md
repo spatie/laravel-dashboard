@@ -32,7 +32,6 @@ Here are tiles created by the community:
 - [Laravel news](https://github.com/dietercoopman/laravel-dashboard-laravelnews-tile): Display the latest Laravel news articles in a loop.
 - [npm downloads](https://github.com/skydiver/laravel-dashboard-npm): Show npm packages stats
 - [Offset Earth](https://github.com/owenvoke/laravel-dashboard-offset-earth-tile): display statistics from Offset Earth
-- [Packagist data](https://packagist.org/packages/tjvb/laravel-dashboard-packagist-tile): Display statistics from Packagist (downloads, favers, github stars) or the packages you want to folow.
 - [Paystack - Customers](https://github.com/digikraaft/laravel-dashboard-paystack-customers-tile): show recent Paystack customers
 - [Paystack - Subscriptions](https://github.com/digikraaft/laravel-dashboard-paystack-subscriptions-tile): show recent Paystack subscriptions)
 - [Paystack - Transactions](https://github.com/digikraaft/laravel-dashboard-paystack-transactions-tile): Display recent transactions from Stripe
