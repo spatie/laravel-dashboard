@@ -8,7 +8,7 @@ class TileTest extends TestCase
 {
     private Tile $tile;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 

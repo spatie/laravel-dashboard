@@ -10,7 +10,7 @@ use Spatie\Dashboard\DashboardServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -30,6 +30,6 @@ abstract class TestCase extends Orchestra
         Schema::dropIfExists('dashboard_tiles');
 
         include_once __DIR__.'/../database/migrations/create_dashboard_tiles_table.php.stub';
-        (new CreateDashboardTilesTable())->up();
+        (new CreateDashboardTilesTable)->up();
     }
 }

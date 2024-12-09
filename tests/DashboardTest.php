@@ -11,11 +11,11 @@ class DashboardTest extends TestCase
 
     private Dashboard $dashboard;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
-        $this->dashboard = new Dashboard();
+        $this->dashboard = new Dashboard;
     }
 
     /** @test */
