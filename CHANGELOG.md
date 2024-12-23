@@ -2,6 +2,19 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 3.1.1 - 2024-12-23
+
+### What's Changed
+
+* Remove the packagist tile from the list because I have abandoned it. by @tvbeek in https://github.com/spatie/laravel-dashboard/pull/120
+* Feature: Customise Page Title by @fredbradley in https://github.com/spatie/laravel-dashboard/pull/121
+
+### New Contributors
+
+* @fredbradley made their first contribution in https://github.com/spatie/laravel-dashboard/pull/121
+
+**Full Changelog**: https://github.com/spatie/laravel-dashboard/compare/3.1.0...3.1.1
+
 ## 3.1.0 - 2024-03-02
 
 ### What's Changed
