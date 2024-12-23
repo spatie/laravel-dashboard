@@ -9,13 +9,14 @@ use Spatie\Dashboard\Dashboard;
 class DashboardComponent extends Component
 {
     public string $pageTitle = '';
+
     public string $theme = '';
 
     public string $initialMode = '';
 
     public ?HtmlString $assets = null;
 
-    public function __construct(Dashboard $dashboard, string $pageTitle='Dashboard')
+    public function __construct(Dashboard $dashboard, string $pageTitle = 'Dashboard')
     {
         $this->theme = $dashboard->getTheme();
 
