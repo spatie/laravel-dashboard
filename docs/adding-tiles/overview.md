@@ -3,16 +3,16 @@ title: Overview
 weight: 1
 ---
 
-On the dashboard a collection of tiles is displayed. You can [create your own tile](/docs/laravel-dashboard/v2/adding-tiles/creating-your-own-tile) or use any of these pre packages ones.
+On the dashboard a collection of tiles is displayed. You can [create your own tile](/docs/laravel-dashboard/v3/adding-tiles/creating-your-own-tile) or use any of these pre packages ones.
 
 There are the tiles created by us:
 
-- [Time and Weather](/docs/laravel-dashboard/v2/adding-tiles/time-weather): displays the current time and weather at your location
-- [Calendar](/docs/laravel-dashboard/v2/adding-tiles/google-calendar): displays events that are on a Google Calendar
-- [Twitter](/docs/laravel-dashboard/v2/adding-tiles/twitter-tile): displays mentions on Twitter
-- [Oh Dear Uptime](/docs/laravel-dashboard/v2/adding-tiles/oh-dear-uptime): displays sites that are detected as down by [Oh Dear](https://ohdear.app)
-- [Belgian Trains](/docs/laravel-dashboard/v2/adding-tiles/belgian-trains): displays real-time info on Belgian trains
-- [Velo](/docs/laravel-dashboard/v2/adding-tiles/velo): displays the status of [Velo](https://www.velo-antwerpen.be/en), the Antwerp bike sharing system
+- [Time and Weather](/docs/laravel-dashboard/v3/adding-tiles/time-weather): displays the current time and weather at your location
+- [Calendar](/docs/laravel-dashboard/v3/adding-tiles/google-calendar): displays events that are on a Google Calendar
+- [Twitter](/docs/laravel-dashboard/v3/adding-tiles/twitter-tile): displays mentions on Twitter
+- [Oh Dear Uptime](/docs/laravel-dashboard/v3/adding-tiles/oh-dear-uptime): displays sites that are detected as down by [Oh Dear](https://ohdear.app)
+- [Belgian Trains](/docs/laravel-dashboard/v3/adding-tiles/belgian-trains): displays real-time info on Belgian trains
+- [Velo](/docs/laravel-dashboard/v3/adding-tiles/velo): displays the status of [Velo](https://www.velo-antwerpen.be/en), the Antwerp bike sharing system
 
 Here are tiles created by the community:
 

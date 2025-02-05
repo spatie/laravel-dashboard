@@ -5,7 +5,7 @@ weight: 4
 
 This tile displays sites that [Oh Dear](https://ohdear.app) detects as down.
 
-![screenshot](https://spatie.be/docs/laravel-dashboard/v2/images/oh-dear.png)
+![screenshot](https://spatie.be/docs/laravel-dashboard/v3/images/oh-dear.png)
 
 ## Installation
 
