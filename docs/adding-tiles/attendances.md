@@ -5,7 +5,7 @@ weight: 9
 
 This tile displays who will be in the office this week, based upon Google calendar.
 
-![screenshot](https://spatie.be/docs/laravel-dashboard/v2/images/attendances.png)
+![screenshot](https://spatie.be/docs/laravel-dashboard/v3/images/attendances.png)
 
 ## Installation
 
