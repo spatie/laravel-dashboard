@@ -2,6 +2,21 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 3.2.0 - 2025-02-21
+
+### What's Changed
+
+* Update links and embedded images to v3 by @rdanklof in https://github.com/spatie/laravel-dashboard/pull/122
+* Update OhDear Laravel Package documentation link by @renoirtech in https://github.com/spatie/laravel-dashboard/pull/123
+* Laravel 12.x Compatibility by @laravel-shift in https://github.com/spatie/laravel-dashboard/pull/124
+
+### New Contributors
+
+* @rdanklof made their first contribution in https://github.com/spatie/laravel-dashboard/pull/122
+* @renoirtech made their first contribution in https://github.com/spatie/laravel-dashboard/pull/123
+
+**Full Changelog**: https://github.com/spatie/laravel-dashboard/compare/3.1.1...3.2.0
+
 ## 3.1.1 - 2024-12-23
 
 ### What's Changed
