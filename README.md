@@ -1,8 +1,18 @@
-# Create beautiful dashboards powered by Livewire
+<div align="left">
+    <a href="https://spatie.be/open-source?utm_source=github&utm_medium=banner&utm_campaign=laravel-dashboard">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://spatie.be/packages/header/laravel-dashboard/html/dark.webp">
+        <img alt="Logo for laravel-dashboard" src=" https://spatie.be/packages/header/laravel-dashboard/html/light.webp" height="190">
+      </picture>
+    </a>
+
+<h1>Create beautiful dashboards powered by Livewire</h1>
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/spatie/laravel-dashboard/run-tests.yml?branch=main&label=tests)](https://github.com/spatie/laravel-dashboard/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-dashboard.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-dashboard)
+    
+</div>
 
 Using this package you can create beautiful dashboards. The dashboard consists of tile which are, under the hood, Livewire components that can update themselves via polling. 
 
