@@ -1,45 +1,25 @@
 <?php
 
-namespace Spatie\Dashboard\Tests;
-
 use Spatie\Dashboard\Models\Tile;
 
-class TileTest extends TestCase
-{
-    private Tile $tile;
+beforeEach(function () {
+    $this->tile = Tile::firstOrCreateForName('dummy');
+});
 
-    protected function setUp(): void
-    {
-        parent::setUp();
+it('can add data', function () {
+    $data = ['a' => 1, 'b' => 2];
 
-        $this->tile = Tile::firstOrCreateForName('dummy');
-    }
+    $this->tile->putData('test', $data);
 
-    /** @test */
-    public function it_can_add_data()
-    {
-        $data = ['a' => 1, 'b' => 2];
+    expect($this->tile->getData('test'))->toBe($data);
+});
 
-        $this->tile->putData('test', $data);
+it('will not create duplicate rows for the same tile name', function () {
+    Tile::firstOrCreateForName('dummy');
 
-        $actualData = $this->tile->getData('test');
+    expect(Tile::get())->toHaveCount(1);
+});
 
-        $this->assertEquals($data, $actualData);
-    }
-
-    /** @test */
-    public function it_will_not_create_duplicate_rows_for_the_same_tile_name()
-    {
-        Tile::firstOrCreateForName('dummy');
-
-        $this->assertCount(1, Tile::get());
-    }
-
-    /** @test */
-    public function it_will_return_null_for_a_non_existing_key()
-    {
-        $data = $this->tile->getData('non-existing-key');
-
-        $this->assertNull($data);
-    }
-}
+it('will return null for a non existing key', function () {
+    expect($this->tile->getData('non-existing-key'))->toBeNull();
+});

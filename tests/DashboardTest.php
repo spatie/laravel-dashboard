@@ -1,46 +1,27 @@
 <?php
 
-namespace Spatie\Dashboard\Tests;
-
 use Spatie\Dashboard\Dashboard;
-use Spatie\Snapshots\MatchesSnapshots;
 
-class DashboardTest extends TestCase
-{
-    use MatchesSnapshots;
+beforeEach(function () {
+    $this->dashboard = new Dashboard;
+});
 
-    private Dashboard $dashboard;
+it('can return all assets as html', function () {
+    $html = $this->dashboard
+        ->script('https://example.com/app.js')
+        ->inlineScript('console.log("hey")')
+        ->stylesheet('https://example.com/app.css')
+        ->inlineStylesheet('style')
+        ->assets()
+        ->toHtml();
 
-    protected function setUp(): void
-    {
-        parent::setUp();
+    $this->assertMatchesSnapshot($html);
+});
 
-        $this->dashboard = new Dashboard;
-    }
+it('can get the default theme', function () {
+    expect($this->dashboard->getTheme())->toBe('light');
+});
 
-    /** @test */
-    public function it_can_return_all_assets_as_html()
-    {
-        $html = $this->dashboard
-            ->script('https://example.com/app.js')
-            ->inlineScript('console.log("hey")')
-            ->stylesheet('https://example.com/app.css')
-            ->inlineStylesheet('style')
-            ->assets()
-            ->toHtml();
-
-        $this->assertMatchesSnapshot($html);
-    }
-
-    /** @test */
-    public function it_can_get_the_default_theme()
-    {
-        $this->assertEquals('light', $this->dashboard->getTheme());
-    }
-
-    /** @test */
-    public function it_can_get_the_default_mode()
-    {
-        $this->assertEquals('light', $this->dashboard->getMode());
-    }
-}
+it('can get the default mode', function () {
+    expect($this->dashboard->getMode())->toBe('light');
+});
