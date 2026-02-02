@@ -16,12 +16,18 @@ class DashboardTileComponent extends Component
 
     public bool $show;
 
+    public bool $lazy;
+
+    public bool $defer;
+
     public function __construct(
         string $position,
         ?int $refreshInterval = null,
         ?string $title = null,
         bool $fade = true,
-        bool $show = true
+        bool $show = true,
+        bool $lazy = false,
+        bool $defer = false
     ) {
         $this->gridArea = $this->convertToGridArea($position);
 
@@ -32,6 +38,10 @@ class DashboardTileComponent extends Component
         $this->fade = $fade;
 
         $this->show = $show;
+
+        $this->lazy = $lazy;
+
+        $this->defer = $defer;
     }
 
     public function render()
