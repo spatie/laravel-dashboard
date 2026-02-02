@@ -8,13 +8,16 @@ use Spatie\Sun\Sun;
 
 class Dashboard
 {
-
+    /** @var array<int, string> */
     public array $scripts = [];
 
+    /** @var array<int, string> */
     public array $inlineScripts = [];
 
+    /** @var array<int, string> */
     public array $stylesheets = [];
 
+    /** @var array<int, string> */
     public array $inlineStylesheets = [];
 
     public function script(string $url): self

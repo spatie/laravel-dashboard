@@ -5,6 +5,9 @@ namespace Spatie\Dashboard\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 
+/**
+ * @property array<string, mixed> $data
+ */
 class Tile extends Model
 {
     protected $table = 'dashboard_tiles';
