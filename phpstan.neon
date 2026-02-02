@@ -1,0 +1,13 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - src
+
+    level: 8
+
+    ignoreErrors:
+        - identifier: argument.type
+          path: src/Components/*
+          message: '#view-string#'
