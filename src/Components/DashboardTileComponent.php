@@ -2,6 +2,7 @@
 
 namespace Spatie\Dashboard\Components;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class DashboardTileComponent extends Component
@@ -44,7 +45,7 @@ class DashboardTileComponent extends Component
         $this->defer = $defer;
     }
 
-    public function render()
+    public function render(): View
     {
         return view('dashboard::tile');
     }

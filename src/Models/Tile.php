@@ -7,11 +7,11 @@ use Illuminate\Support\Arr;
 
 class Tile extends Model
 {
-    public $table = 'dashboard_tiles';
+    protected $table = 'dashboard_tiles';
 
-    public $guarded = [];
+    protected $guarded = [];
 
-    public $casts = [
+    protected $casts = [
         'data' => 'array',
     ];
 
@@ -20,7 +20,7 @@ class Tile extends Model
         return static::firstOrCreate(['name' => $name]);
     }
 
-    public function putData($name, $value)
+    public function putData(string $name, mixed $value): self
     {
         $currentData = $this->data;
 
@@ -33,7 +33,7 @@ class Tile extends Model
         return $this;
     }
 
-    public function getData(string $name)
+    public function getData(string $name): mixed
     {
         return Arr::get($this->data, $name);
     }
