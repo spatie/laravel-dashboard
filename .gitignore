@@ -6,3 +6,5 @@ composer.lock
 coverage
 node_modules
 vendor
+.claude/
+.phpunit.cache/
