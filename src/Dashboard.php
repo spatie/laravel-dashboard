@@ -3,11 +3,11 @@
 namespace Spatie\Dashboard;
 
 use Illuminate\Support\HtmlString;
+use Spatie\Dashboard\Enums\Theme;
 use Spatie\Sun\Sun;
 
 class Dashboard
 {
-    const THEMES = ['auto', 'device', 'light', 'dark'];
 
     public array $scripts = [];
 
@@ -83,19 +83,15 @@ class Dashboard
     {
         $theme = $this->getTheme();
 
-        if ($theme === 'auto') {
-            return app(Sun::class)->sunIsUp() ? 'light' : 'dark';
-        }
-
-        if ($theme === 'dark') {
-            return 'dark';
-        }
-
-        return 'light';
+        return match ($theme) {
+            'auto' => app(Sun::class)->sunIsUp() ? 'light' : 'dark',
+            'dark' => 'dark',
+            default => 'light',
+        };
     }
 
     protected function isValidTheme(string $theme): bool
     {
-        return in_array($theme, self::THEMES);
+        return Theme::tryFrom($theme) !== null;
     }
 }

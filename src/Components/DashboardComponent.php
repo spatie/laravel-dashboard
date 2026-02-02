@@ -2,6 +2,7 @@
 
 namespace Spatie\Dashboard\Components;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\View\Component;
 use Spatie\Dashboard\Dashboard;
@@ -27,7 +28,7 @@ class DashboardComponent extends Component
         $this->pageTitle = $pageTitle;
     }
 
-    public function render()
+    public function render(): View
     {
         return view('dashboard::dashboard');
     }

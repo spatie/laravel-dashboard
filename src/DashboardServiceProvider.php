@@ -12,7 +12,7 @@ use Spatie\Sun\Sun;
 
 class DashboardServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         $dashboard = $this->app->make(Dashboard::class);
 
@@ -30,7 +30,7 @@ class DashboardServiceProvider extends ServiceProvider
             ->registerLivewireComponents();
     }
 
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(__DIR__.'/../config/dashboard.php', 'dashboard');
 
