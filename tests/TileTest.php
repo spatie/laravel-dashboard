@@ -15,8 +15,7 @@ class TileTest extends TestCase
         $this->tile = Tile::firstOrCreateForName('dummy');
     }
 
-    /** @test */
-    public function it_can_add_data()
+    public function test_it_can_add_data()
     {
         $data = ['a' => 1, 'b' => 2];
 
@@ -27,16 +26,14 @@ class TileTest extends TestCase
         $this->assertEquals($data, $actualData);
     }
 
-    /** @test */
-    public function it_will_not_create_duplicate_rows_for_the_same_tile_name()
+    public function test_it_will_not_create_duplicate_rows_for_the_same_tile_name()
     {
         Tile::firstOrCreateForName('dummy');
 
         $this->assertCount(1, Tile::get());
     }
 
-    /** @test */
-    public function it_will_return_null_for_a_non_existing_key()
+    public function test_it_will_return_null_for_a_non_existing_key()
     {
         $data = $this->tile->getData('non-existing-key');
 

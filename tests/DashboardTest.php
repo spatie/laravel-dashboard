@@ -18,8 +18,7 @@ class DashboardTest extends TestCase
         $this->dashboard = new Dashboard;
     }
 
-    /** @test */
-    public function it_can_return_all_assets_as_html()
+    public function test_it_can_return_all_assets_as_html()
     {
         $html = $this->dashboard
             ->script('https://example.com/app.js')
@@ -32,14 +31,12 @@ class DashboardTest extends TestCase
         $this->assertMatchesSnapshot($html);
     }
 
-    /** @test */
-    public function it_can_get_the_default_theme()
+    public function test_it_can_get_the_default_theme()
     {
         $this->assertEquals('light', $this->dashboard->getTheme());
     }
 
-    /** @test */
-    public function it_can_get_the_default_mode()
+    public function test_it_can_get_the_default_mode()
     {
         $this->assertEquals('light', $this->dashboard->getMode());
     }
