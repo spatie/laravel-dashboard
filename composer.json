@@ -17,14 +17,14 @@
     ],
     "require": {
         "php": "^8.3",
-        "illuminate/database": "^10.0|^11.0|^12.0",
-        "illuminate/view": "^10.0|^11.0|^12.0",
-        "livewire/livewire": "^3.0",
+        "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/view": "^10.0|^11.0|^12.0|^13.0",
+        "livewire/livewire": "^3.0|dev-josh/v3-laravel-13-support",
         "spatie/sun": "^1.1.1"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.0|^9.0|^10.0",
-        "phpunit/phpunit": "^10.5|^11.5.3",
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.5|^11.5.3|^12.5.12",
         "spatie/phpunit-snapshot-assertions": "^4.2|^5.1"
     },
     "autoload": {
