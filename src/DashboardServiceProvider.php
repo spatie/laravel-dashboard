@@ -20,8 +20,6 @@ class DashboardServiceProvider extends ServiceProvider
             $dashboard->stylesheet($inter);
         }
 
-        $dashboard->inlineStylesheet((string) file_get_contents(__DIR__.'/../resources/dist/dashboard.min.css'));
-
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'dashboard');
 
         $this

@@ -11,7 +11,7 @@
     --color-error: var(--color-error);
     --color-success: var(--color-success);
 
-    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: "Inter UI", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     --grid-template-column-1-1: 1fr 1fr;
     --grid-template-column-1-auto: 1fr auto;
