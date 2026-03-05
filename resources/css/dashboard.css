@@ -1,4 +1,36 @@
-@tailwind base;
+@import "tailwindcss";
+
+@theme {
+    --color-default: var(--color-default);
+    --color-invers: var(--color-invers);
+    --color-dimmed: var(--color-dimmed);
+    --color-accent: var(--color-accent);
+    --color-canvas: var(--color-canvas);
+    --color-tile: var(--color-tile);
+    --color-warning: var(--color-warning);
+    --color-error: var(--color-error);
+    --color-success: var(--color-success);
+
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --grid-template-column-1-1: 1fr 1fr;
+    --grid-template-column-1-auto: 1fr auto;
+    --grid-template-column-1-auto-1: 1fr auto 1fr;
+    --grid-template-column-1-auto-auto: 1fr auto auto;
+    --grid-template-column-auto-1: auto 1fr;
+    --grid-template-column-auto-1-1: auto 1fr 1fr;
+    --grid-template-column-auto-1-auto: auto 1fr auto;
+    --grid-template-column-auto-auto: auto auto;
+
+    --grid-template-row-1-1: 1fr 1fr;
+    --grid-template-row-1-auto: 1fr auto;
+    --grid-template-row-1-auto-1: 1fr auto 1fr;
+    --grid-template-row-1-auto-auto: 1fr auto auto;
+    --grid-template-row-auto-1: auto 1fr;
+    --grid-template-row-auto-1-1: auto 1fr 1fr;
+    --grid-template-row-auto-1-auto: auto 1fr auto;
+    --grid-template-row-auto-auto: auto auto;
+}
 
 :root {
     --color-default: rgba(0, 0, 0, 0.9);
@@ -31,6 +63,3 @@ html {
 .tabular-nums {
     font-variant-numeric: tabular-nums;
 }
-
-@tailwind components;
-@tailwind utilities;

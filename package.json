@@ -5,17 +5,11 @@
         "build": "postcss resources/css/dashboard.css -o resources/dist/dashboard.min.css"
     },
     "devDependencies": {
-        "cssnano": "^4.1.10",
-        "husky": "^3.0.9",
-        "lint-staged": "^9.5.0",
-        "postcss-cli": "^7.1.0",
-        "postcss": "7.0.27",
-        "prettier": "^2.0.5",
-        "tailwindcss": "^1.3.4"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+        "@tailwindcss/postcss": "^4.0.0",
+        "cssnano": "^7.0.0",
+        "postcss": "^8.5.0",
+        "postcss-cli": "^11.0.0",
+        "prettier": "^3.0.0",
+        "tailwindcss": "^4.0.0"
     }
 }
