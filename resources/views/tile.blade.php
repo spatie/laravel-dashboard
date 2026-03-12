@@ -3,7 +3,7 @@
      {{ $attributes->merge([
         'class'=>'overflow-hidden rounded relative bg-tile'
         ])}}
-    {{ $refreshIntervalInSeconds ? "wire:poll.{$refreshIntervalInSeconds}s" : ''  }}
+    {{ $refreshInterval ? "wire:poll.{$refreshInterval}s" : ''  }}
 >
     <div
         class="absolute inset-0 overflow-hidden p-4"
