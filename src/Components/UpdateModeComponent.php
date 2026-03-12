@@ -13,7 +13,7 @@ class UpdateModeComponent extends Component
         /** @var Dashboard $dashboard */
         $dashboard = app(Dashboard::class);
 
-        $this->dispatch('updateMode', $dashboard->getMode());
+        $this->dispatch('updateMode', $dashboard->getMode()->value);
 
         return view('dashboard::components.updateMode');
     }

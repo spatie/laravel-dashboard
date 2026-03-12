@@ -76,7 +76,7 @@
 </head>
 <body class="leading-snug">
 <div
-    x-data="theme('{{ $theme }}', '{{ $initialMode }}')"
+    x-data="theme('{{ $theme->value }}', '{{ $initialMode->value }}')"
     x-init="init"
     :class="mode === 'dark' ? 'dark-mode' : ''"
 >

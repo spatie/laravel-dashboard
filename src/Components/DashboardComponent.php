@@ -6,26 +6,24 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\View\Component;
 use Spatie\Dashboard\Dashboard;
+use Spatie\Dashboard\Enums\Mode;
+use Spatie\Dashboard\Enums\Theme;
 
 class DashboardComponent extends Component
 {
-    public string $pageTitle = '';
+    public Theme $theme;
 
-    public string $theme = '';
-
-    public string $initialMode = '';
+    public Mode $initialMode;
 
     public ?HtmlString $assets = null;
 
-    public function __construct(Dashboard $dashboard, string $pageTitle = 'Dashboard')
+    public function __construct(Dashboard $dashboard, public string $pageTitle = 'Dashboard')
     {
         $this->theme = $dashboard->getTheme();
 
         $this->initialMode = $dashboard->getMode();
 
         $this->assets = $dashboard->assets();
-
-        $this->pageTitle = $pageTitle;
     }
 
     public function render(): View
