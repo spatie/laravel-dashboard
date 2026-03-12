@@ -41,19 +41,13 @@ class DashboardServiceProvider extends ServiceProvider
                 config('dashboard.auto_theme_location.lng')
             );
         });
-
-        $this->app->when(DashboardComponent::class)
-            ->needs('$defaultTheme')
-            ->give(config('dashboard.theme'));
     }
 
-    protected function registerPublishables(): self
+    protected function registerPublishables(): static
     {
-        if (! class_exists('CreateDashboardTilesTable')) {
-            $this->publishes([
-                __DIR__.'/../database/migrations/create_dashboard_tiles_table.php.stub' => database_path('migrations/'.date('Y_m_d_His', time()).'_create_dashboard_tiles_table.php'),
-            ], 'dashboard-migrations');
-        }
+        $this->publishes([
+            __DIR__.'/../database/migrations/create_dashboard_tiles_table.php.stub' => database_path('migrations/'.date('Y_m_d_His', time()).'_create_dashboard_tiles_table.php'),
+        ], 'dashboard-migrations');
 
         $this->publishes([
             __DIR__.'/../config/dashboard.php' => config_path('dashboard.php'),
@@ -66,7 +60,7 @@ class DashboardServiceProvider extends ServiceProvider
         return $this;
     }
 
-    protected function registerBladeComponents(): self
+    protected function registerBladeComponents(): static
     {
         Blade::component('dashboard', DashboardComponent::class);
         Blade::component('dashboard-tile', DashboardTileComponent::class);
@@ -74,7 +68,7 @@ class DashboardServiceProvider extends ServiceProvider
         return $this;
     }
 
-    protected function registerLivewireComponents(): self
+    protected function registerLivewireComponents(): static
     {
         Livewire::component('dashboard-update-mode', UpdateModeComponent::class);
 
