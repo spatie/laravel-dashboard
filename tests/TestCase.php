@@ -2,7 +2,6 @@
 
 namespace Spatie\Dashboard\Tests;
 
-use CreateDashboardTilesTable;
 use Illuminate\Support\Facades\Schema;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
@@ -30,11 +29,11 @@ abstract class TestCase extends Orchestra
         $app['config']->set('app.key', 'base64:'.base64_encode(random_bytes(32)));
     }
 
-    protected function setUpDatabase()
+    protected function setUpDatabase(): void
     {
         Schema::dropIfExists('dashboard_tiles');
 
-        include_once __DIR__.'/../database/migrations/create_dashboard_tiles_table.php.stub';
-        (new CreateDashboardTilesTable)->up();
+        $migration = include __DIR__.'/../database/migrations/create_dashboard_tiles_table.php.stub';
+        $migration->up();
     }
 }
