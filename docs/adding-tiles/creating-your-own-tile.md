@@ -7,9 +7,25 @@ If you have knowledge of Laravel, creating a new component is a straightforward 
 
 ### Creating a minimal tile
 
-At the minimum a tile consist of a Livewire component class and a view. If you have never worked with Livewire before, we recommend to first read [the documentation of Livewire](https://laravel-livewire.com/docs/quickstart), especially the part on [making components](https://laravel-livewire.com/docs/making-components). Are you a visual learner? Then you'll be happy to know there's also [a free video course](https://laravel-livewire.com/screencasts/installation) to get you started.
+At the minimum a tile consist of a Livewire component class and a view. If you have never worked with Livewire before, we recommend to first read [the documentation of Livewire](https://livewire.laravel.com/docs), especially the part on [making components](https://livewire.laravel.com/docs/components). Are you a visual learner? Then you'll be happy to know there's also [a free video course](https://livewire.laravel.com/screencasts/installation) to get you started.
 
-This is the most minimal Tile component you can create.
+The recommended way to create a tile is to extend `BaseTileComponent`. This abstract class provides a `$position` property, the `#[Defer]` attribute for lazy-loading, and a skeleton placeholder out of the box.
+
+```php
+namespace App\Tiles;
+
+use Spatie\Dashboard\Components\BaseTileComponent;
+
+class DummyComponent extends BaseTileComponent
+{
+    public function render()
+    {
+        return view('tiles.dummy');
+    }
+}
+```
+
+Alternatively, you can extend `Livewire\Component` directly and accept the `position` yourself:
 
 ```php
 namespace App\Tiles;
@@ -18,13 +34,7 @@ use Livewire\Component;
 
 class DummyComponent extends Component
 {
-    /** @var string */
-    public $position;
-
-    public function mount(string $position)
-    {
-        $this->position = $position;
-    }
+    public string $position;
 
     public function render()
     {
@@ -33,7 +43,7 @@ class DummyComponent extends Component
 }
 ```
 
-You should always accept a `position` via the mount function. This position will used [to position tiles on the dashboard](/docs/laravel-dashboard/v3/basic-usage/positioning-tiles).
+The `position` will be used [to position tiles on the dashboard](/docs/laravel-dashboard/v4/basic-usage/positioning-tiles).
 
 Here's how that `tiles.dummy` view could look like
 
@@ -97,28 +107,40 @@ To refresh a tile, you should pass an amount of seconds to the `refresh-interval
 ```html
 <x-dashboard-tile :position="$position" refresh-interval="60">
     <h1>Dummy</h1>
-    
+
     {{-- display the $data --}}
 </x-dashboard-tile>
 ```
 
-If your component only needs to be refreshed partials, you can add `wire:poll` to your view (instead of using the `refresh-interval` prop.
+If your component only needs to be refreshed partially, you can add `wire:poll` to your view (instead of using the `refresh-interval` prop).
 
 ```html
 <x-dashboard-tile :position="$position" >
     <h1>Dummy</h1>
-    
+
      <div wire:poll.60s>
         Only this part will be refreshed
     </div>
 </x-dashboard-tile>
 ```
 
+## Lazy loading
+
+The `<x-dashboard-tile>` component supports `lazy` and `defer` boolean props for controlling Livewire's lazy-loading behavior:
+
+```html
+<x-dashboard-tile :position="$position" :lazy="true">
+    <h1>Dummy</h1>
+</x-dashboard-tile>
+```
+
+If you extend `BaseTileComponent`, the `#[Defer]` attribute is already applied, so your tile will be deferred automatically.
+
 ## Styling your component
 
-The dashboard is styled using [Tailwind](https://tailwindcss.com). In your component you can use any of the classes Tailwind provides.
+The dashboard is styled using [Tailwind CSS 4](https://tailwindcss.com). In your component you can use any of the classes Tailwind provides.
 
-In addition to Tailwind, the dashboard defines these extra colors for you to use: `default`, `invers`, `dimmed`, `accent`, `canvas`, `tile`, `success`, `warning`, `error`. 
+In addition to Tailwind, the dashboard defines these extra colors for you to use: `default`, `invers`, `dimmed`, `accent`, `canvas`, `tile`, `success`, `warning`, `error`.
 
 By default, these colors are automatically shared by the `textColor`, `borderColor`, and `backgroundColor` utilities, so you can use utility classes like `text-canvas`, `border-error`, and `bg-dimmed`.
 
@@ -142,9 +164,4 @@ If you have created a tile that could be beneficial to others, consider sharing 
 
 [This repo](https://github.com/spatie/laravel-dashboard-skeleton-tile) contains a skeleton that can help you kick start your tile package.
 
-
-
 When you have published you package, let us know by sending a mail to info@spatie.be, and we'll mention your tile in our docs.
-
-
-
