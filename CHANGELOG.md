@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-dashboard` will be documented in this file
 
+## 4.0.0
+
+- Use Tailwind CSS 4
+
 ## 3.3.1 - 2026-02-27
 
 Support Livewire 4

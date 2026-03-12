@@ -2,39 +2,26 @@
 
 namespace Spatie\Dashboard\Components;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class DashboardTileComponent extends Component
 {
     public string $gridArea;
 
-    public ?int $refreshIntervalInSeconds;
-
-    public ?string $title;
-
-    public bool $fade;
-
-    public bool $show;
-
     public function __construct(
         string $position,
-        ?int $refreshInterval = null,
-        ?string $title = null,
-        bool $fade = true,
-        bool $show = true
+        public ?int $refreshInterval = null,
+        public ?string $title = null,
+        public bool $fade = true,
+        public bool $show = true,
+        public bool $lazy = false,
+        public bool $defer = false,
     ) {
         $this->gridArea = $this->convertToGridArea($position);
-
-        $this->refreshIntervalInSeconds = $refreshInterval;
-
-        $this->title = $title;
-
-        $this->fade = $fade;
-
-        $this->show = $show;
     }
 
-    public function render()
+    public function render(): View
     {
         return view('dashboard::tile');
     }

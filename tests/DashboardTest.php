@@ -1,43 +1,66 @@
 <?php
 
-namespace Spatie\Dashboard\Tests;
-
 use Spatie\Dashboard\Dashboard;
-use Spatie\Snapshots\MatchesSnapshots;
+use Spatie\Dashboard\Enums\Mode;
+use Spatie\Dashboard\Enums\Theme;
 
-class DashboardTest extends TestCase
-{
-    use MatchesSnapshots;
+beforeEach(function () {
+    $this->dashboard = new Dashboard;
+});
 
-    private Dashboard $dashboard;
+it('can return all assets as html', function () {
+    $html = $this->dashboard
+        ->script('https://example.com/app.js')
+        ->inlineScript('console.log("hey")')
+        ->stylesheet('https://example.com/app.css')
+        ->inlineStylesheet('style')
+        ->assets()
+        ->toHtml();
 
-    protected function setUp(): void
-    {
-        parent::setUp();
+    $this->assertMatchesSnapshot($html);
+});
 
-        $this->dashboard = new Dashboard;
-    }
+it('can get the default theme', function () {
+    expect($this->dashboard->getTheme())->toBe(Theme::Light);
+});
 
-    public function test_it_can_return_all_assets_as_html()
-    {
-        $html = $this->dashboard
-            ->script('https://example.com/app.js')
-            ->inlineScript('console.log("hey")')
-            ->stylesheet('https://example.com/app.css')
-            ->inlineStylesheet('style')
-            ->assets()
-            ->toHtml();
+it('can get the default mode', function () {
+    expect($this->dashboard->getMode())->toBe(Mode::Light);
+});
 
-        $this->assertMatchesSnapshot($html);
-    }
+it('uses theme from query parameter', function () {
+    request()->merge(['theme' => 'dark']);
 
-    public function test_it_can_get_the_default_theme()
-    {
-        $this->assertEquals('light', $this->dashboard->getTheme());
-    }
+    expect($this->dashboard->getTheme())->toBe(Theme::Dark);
+});
 
-    public function test_it_can_get_the_default_mode()
-    {
-        $this->assertEquals('light', $this->dashboard->getMode());
-    }
-}
+it('accepts all valid themes via query parameter', function (Theme $theme) {
+    request()->merge(['theme' => $theme->value]);
+
+    expect($this->dashboard->getTheme())->toBe($theme);
+})->with([Theme::Light, Theme::Dark, Theme::Auto, Theme::Device]);
+
+it('ignores invalid theme query parameter', function () {
+    request()->merge(['theme' => 'invalid']);
+
+    expect($this->dashboard->getTheme())->toBe(Theme::Light);
+});
+
+it('returns light mode for light theme', function () {
+    request()->merge(['theme' => 'light']);
+
+    expect($this->dashboard->getMode())->toBe(Mode::Light);
+});
+
+it('returns dark mode for dark theme', function () {
+    request()->merge(['theme' => 'dark']);
+
+    expect($this->dashboard->getMode())->toBe(Mode::Dark);
+});
+
+it('returns light as initial mode for device theme', function () {
+    request()->merge(['theme' => 'device']);
+
+    // Device theme detection is handled client-side, server returns 'light' as initial mode
+    expect($this->dashboard->getMode())->toBe(Mode::Light);
+});

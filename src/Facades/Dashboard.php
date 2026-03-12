@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Facade;
  */
 class Dashboard extends Facade
 {
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'dashboard';
     }

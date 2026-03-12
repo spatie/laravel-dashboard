@@ -3,42 +3,46 @@
 namespace Spatie\Dashboard;
 
 use Illuminate\Support\HtmlString;
+use Spatie\Dashboard\Enums\Mode;
+use Spatie\Dashboard\Enums\Theme;
 use Spatie\Sun\Sun;
 
 class Dashboard
 {
-    const THEMES = ['auto', 'device', 'light', 'dark'];
-
+    /** @var array<int, string> */
     public array $scripts = [];
 
+    /** @var array<int, string> */
     public array $inlineScripts = [];
 
+    /** @var array<int, string> */
     public array $stylesheets = [];
 
+    /** @var array<int, string> */
     public array $inlineStylesheets = [];
 
-    public function script(string $url): self
+    public function script(string $url): static
     {
         $this->scripts[] = $url;
 
         return $this;
     }
 
-    public function inlineScript(string $script): self
+    public function inlineScript(string $script): static
     {
         $this->inlineScripts[] = $script;
 
         return $this;
     }
 
-    public function stylesheet(string $url): self
+    public function stylesheet(string $url): static
     {
         $this->stylesheets[] = $url;
 
         return $this;
     }
 
-    public function inlineStylesheet(string $stylesheet): self
+    public function inlineStylesheet(string $stylesheet): static
     {
         $this->inlineStylesheets[] = $stylesheet;
 
@@ -68,34 +72,23 @@ class Dashboard
         return new HtmlString(implode('', $assets));
     }
 
-    public function getTheme(): string
+    public function getTheme(): Theme
     {
-        $defaultTheme = config('dashboard.theme');
+        $defaultTheme = Theme::from(config('dashboard.theme'));
 
         $requestedTheme = request()->query('theme') ?? '';
 
-        return $this->isValidTheme($requestedTheme)
-            ? $requestedTheme
-            : $defaultTheme;
+        return Theme::tryFrom($requestedTheme) ?? $defaultTheme;
     }
 
-    public function getMode(): string
+    public function getMode(): Mode
     {
         $theme = $this->getTheme();
 
-        if ($theme === 'auto') {
-            return app(Sun::class)->sunIsUp() ? 'light' : 'dark';
-        }
-
-        if ($theme === 'dark') {
-            return 'dark';
-        }
-
-        return 'light';
-    }
-
-    protected function isValidTheme(string $theme): bool
-    {
-        return in_array($theme, self::THEMES);
+        return match ($theme) {
+            Theme::Auto => app(Sun::class)->sunIsUp() ? Mode::Light : Mode::Dark,
+            Theme::Dark => Mode::Dark,
+            default => Mode::Light,
+        };
     }
 }
