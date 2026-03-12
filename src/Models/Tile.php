@@ -12,11 +12,7 @@ class Tile extends Model
 {
     protected $table = 'dashboard_tiles';
 
-    protected $guarded = [];
-
-    protected $casts = [
-        'data' => 'array',
-    ];
+    protected $fillable = ['name', 'data'];
 
     public static function firstOrCreateForName(string $name): self
     {
@@ -39,5 +35,13 @@ class Tile extends Model
     public function getData(string $name): mixed
     {
         return Arr::get($this->data, $name);
+    }
+
+    /** @return array<string, string> */
+    protected function casts(): array
+    {
+        return [
+            'data' => 'array',
+        ];
     }
 }
