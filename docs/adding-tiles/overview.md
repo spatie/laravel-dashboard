@@ -33,7 +33,7 @@ Here are tiles created by the community:
 - [Offset Earth](https://github.com/owenvoke/laravel-dashboard-offset-earth-tile): display statistics from Offset Earth
 - [Paystack - Customers](https://github.com/digikraaft/laravel-dashboard-paystack-customers-tile): show recent Paystack customers
 - [Paystack - Subscriptions](https://github.com/digikraaft/laravel-dashboard-paystack-subscriptions-tile): show recent Paystack subscriptions)
-- [Paystack - Transactions](https://github.com/digikraaft/laravel-dashboard-paystack-transactions-tile): Display recent transactions from Stripe
+- [Paystack - Transactions](https://github.com/digikraaft/laravel-dashboard-paystack-transactions-tile): Display recent transactions from Paystack
 - [Pi-hole](https://github.com/owenvoke/laravel-dashboard-pihole-tile): display statistics from Pi-hole
 - [PingPing](https://github.com/Astrotomic/laravel-dashboard-pingping-tile): display sites monitored by [PingPing](https://pingping.io)
 - [QR code](https://github.com/solitweb/laravel-dashboard-qr-code-tile): display a QR code
