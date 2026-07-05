@@ -15,4 +15,9 @@ return new class extends Migration
             $table->timestamps();
         });
     }
+
+    public function down()
+    {
+        Schema::drop('dashboard_tiles');
+    }
 };
