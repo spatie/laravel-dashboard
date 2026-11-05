@@ -35,11 +35,6 @@ jobs:
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick
           coverage: none
 
-      - name: Create database
-        run: |
-          sudo /etc/init.d/mysql start
-          mysql  -u root -proot -e 'CREATE DATABASE IF NOT EXISTS laravel_dashboard;'
-
       - name: Install dependencies
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
@@ -47,6 +42,3 @@ jobs:
 
       - name: Execute tests
         run: vendor/bin/pest
-        env:
-          DB_PORT: ${{ job.services.mysql.ports[3306] }}
-          DB_PASSWORD: root
