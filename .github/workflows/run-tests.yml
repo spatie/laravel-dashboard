@@ -9,14 +9,16 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
-        php: [8.3, 8.4, 8.5]
-        laravel: ['11.*', '12.*', '13.*']
+        php: [8.3, 8.4, 8.5, 8.6]
+        laravel: ['12.*', '13.*']
         dependency-version: [prefer-stable]
+        exclude:
+          # Laravel 12's missing create_sid() triggers a PHP 8.6 ViewException.
+          - php: 8.6
+            laravel: 12.*
         include:
-          - laravel: 11.*
-            testbench: ^9.0
           - laravel: 12.*
             testbench: ^10.0
           - laravel: 13.*
@@ -35,11 +37,6 @@ jobs:
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick
           coverage: none
 
-      - name: Create database
-        run: |
-          sudo /etc/init.d/mysql start
-          mysql  -u root -proot -e 'CREATE DATABASE IF NOT EXISTS laravel_dashboard;'
-
       - name: Install dependencies
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
@@ -47,6 +44,3 @@ jobs:
 
       - name: Execute tests
         run: vendor/bin/pest
-        env:
-          DB_PORT: ${{ job.services.mysql.ports[3306] }}
-          DB_PASSWORD: root
